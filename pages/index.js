@@ -36,9 +36,7 @@ export default function Home() {
           alt="BBN Digital logo"
           className={styles.logo}
         />
-        <p className={styles.description}>
-          Something exciting is on the way...
-        </p>
+        <h2>Something exciting is on the way</h2>
       </main>
 
       <footer className={styles.footer}>
