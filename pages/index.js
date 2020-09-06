@@ -26,6 +26,29 @@ export default function Home() {
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#e8185f" />
         <meta name="msapplication-TileColor" content="#e8185f" />
         <meta name="theme-color" content="#ffffff"></meta>
+
+        {/* Open Graph */}
+        <meta property="og:title" content="BBN.DGTL" />
+        <meta property="og:site_name" content="BBN.DGTL" />
+        <meta property="og:url" content="https://bbn.dgtl" />
+        <meta
+          property="og:description"
+          content="Words and work from Aaron Cawte, a front-end developer and product designer based in London, UK."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/img/open-graph.png" />
+
+        {/* Twitter Cards */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@bbncreative" />
+        <meta name="twitter:creator" content="@aaroncawte" />
+        <meta name="twitter:title" content="BBN.DGTL" />
+        <meta
+          name="twitter:description"
+          content="Words and work from Aaron Cawte, a front-end developer and product designer based in London, UK."
+        />
+        <meta name="twitter:image" content="/img/open-graph.png" />
+
         <title>BBN.DGTL</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
