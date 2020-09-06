@@ -55,7 +55,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <img
-          src="pentagon-shard.svg"
+          src="img/pentagon-shard.svg"
           alt="BBN Digital logo"
           className={styles.logo}
         />
