@@ -22,10 +22,15 @@ export default function Home() {
           sizes="16x16"
           href="/favicon-16x16.png"
         />
+        <link rel="icon" href="/favicon.ico" />
         <link rel="manifest" href="/site.webmanifest" />
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#e8185f" />
         <meta name="msapplication-TileColor" content="#e8185f" />
-        <meta name="theme-color" content="#ffffff"></meta>
+        <meta name="theme-color" content="#e8185f"></meta>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1"
+        ></meta>
 
         {/* Open Graph */}
         <meta property="og:title" content="BBN.DGTL" />
@@ -50,16 +55,15 @@ export default function Home() {
         <meta name="twitter:image" content="/img/open-graph.png" />
 
         <title>BBN.DGTL</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
         <img
           src="img/pentagon-shard.svg"
-          alt="BBN Digital logo"
+          alt="BBN.DGTL logo"
           className={styles.logo}
         />
-        <h2>Something exciting is on the way</h2>
+        <h2 className={styles.headline}>Something exciting is on the way</h2>
       </main>
 
       <footer className={styles.footer}>
