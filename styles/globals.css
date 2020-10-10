@@ -86,3 +86,14 @@ h3 {
 a {
   color: inherit;
 }
+
+main {
+  min-height: calc(100vh - 17rem);
+  box-sizing: border-box;
+  padding: 4rem 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+}
