@@ -1,49 +1,50 @@
 @font-face {
   font-family: "Staatliches";
-  src: url("/fonts/Staatliches/Staatliches-Regular.woff2") format("woff2"),
-    url("/fonts/Staatliches/Staatliches-Regular.woff") format("woff"),
-    url("/fonts/Staatliches/Staatliches-Regular.eot") format("eot"),
-    url("/fonts/Staatliches/Staatliches-Regular.ttf") format("ttf");
+  src: url("../public/fonts/Staatliches/Staatliches-Regular.woff2")
+      format("woff2"),
+    url("../public/fonts/Staatliches/Staatliches-Regular.woff") format("woff"),
+    url("../public/fonts/Staatliches/Staatliches-Regular.eot") format("eot"),
+    url("../public/fonts/Staatliches/Staatliches-Regular.ttf") format("ttf");
 }
 
 @font-face {
   font-family: "Open Sans";
   font-weight: 400;
   font-style: normal;
-  src: url("/fonts/OpenSans/OpenSans-Regular.woff2") format("woff2"),
-    url("/fonts/OpenSans/OpenSans-Regular.woff") format("woff"),
-    url("/fonts/OpenSans/OpenSans-Regular.eot") format("eot"),
-    url("/fonts/OpenSans/OpenSans-Regular.ttf") format("ttf");
+  src: url("../public/fonts/OpenSans/OpenSans-Regular.woff2") format("woff2"),
+    url("../public/fonts/OpenSans/OpenSans-Regular.woff") format("woff"),
+    url("../public/fonts/OpenSans/OpenSans-Regular.eot") format("eot"),
+    url("../public/fonts/OpenSans/OpenSans-Regular.ttf") format("ttf");
 }
 
 @font-face {
   font-family: "Open Sans";
   font-weight: 400;
   font-style: italic;
-  src: url("/fonts/OpenSans/OpenSans-Italic.woff2") format("woff2"),
-    url("/fonts/OpenSans/OpenSans-Italic.woff") format("woff"),
-    url("/fonts/OpenSans/OpenSans-Italic.eot") format("eot"),
-    url("/fonts/OpenSans/OpenSans-Italic.ttf") format("ttf");
+  src: url("../public/fonts/OpenSans/OpenSans-Italic.woff2") format("woff2"),
+    url("../public/fonts/OpenSans/OpenSans-Italic.woff") format("woff"),
+    url("../public/fonts/OpenSans/OpenSans-Italic.eot") format("eot"),
+    url("../public/fonts/OpenSans/OpenSans-Italic.ttf") format("ttf");
 }
 
 @font-face {
   font-family: "Open Sans";
   font-weight: bold;
   font-style: normal;
-  src: url("/fonts/OpenSans/OpenSans-Bold.woff2") format("woff2"),
-    url("/fonts/OpenSans/OpenSans-Bold.woff") format("woff"),
-    url("/fonts/OpenSans/OpenSans-Bold.eot") format("eot"),
-    url("/fonts/OpenSans/OpenSans-Bold.ttf") format("ttf");
+  src: url("../public/fonts/OpenSans/OpenSans-Bold.woff2") format("woff2"),
+    url("../public/fonts/OpenSans/OpenSans-Bold.woff") format("woff"),
+    url("../public/fonts/OpenSans/OpenSans-Bold.eot") format("eot"),
+    url("../public/fonts/OpenSans/OpenSans-Bold.ttf") format("ttf");
 }
 
 @font-face {
   font-family: "Open Sans";
   font-weight: bold;
   font-style: italic;
-  src: url("/fonts/OpenSans/OpenSans-BoldItalic.woff2") format("woff2"),
-    url("/fonts/OpenSans/OpenSans-BoldItalic.woff") format("woff"),
-    url("/fonts/OpenSans/OpenSans-BoldItalic.eot") format("eot"),
-    url("/fonts/OpenSans/OpenSans-BoldItalic.ttf") format("ttf");
+  src: url("../public/fonts/OpenSans/OpenSans-BoldItalic.woff2") format("woff2"),
+    url("../public/fonts/OpenSans/OpenSans-BoldItalic.woff") format("woff"),
+    url("../public/fonts/OpenSans/OpenSans-BoldItalic.eot") format("eot"),
+    url("../public/fonts/OpenSans/OpenSans-BoldItalic.ttf") format("ttf");
 }
 
 :root {
