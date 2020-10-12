@@ -1,4 +1,3 @@
-import Head from "next/head";
 import CustomHead from "./_head";
 import Footer from "../components/Footer";
 import Container from "../components/Container";
