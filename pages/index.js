@@ -1,4 +1,3 @@
-import Head from "next/head";
 import CustomHead from "./_head";
 import Footer from "../components/Footer";
 import Navigation from "../components/Navigation";
@@ -12,7 +11,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h2 className={styles.headline}>
-          Isn't it nice when
+          Isn&apos;t it nice when
           <br />
           things are <span className={styles.simpler}>simpler</span>?
         </h2>
