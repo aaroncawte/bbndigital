@@ -3,7 +3,7 @@
   "short_name": "BBN.DGTL",
   "description": "BBN.DGTL is a portfolio and blog site for Aaron Cawte.",
   "start_url": "/",
-  "display": "browser",
+  "display": "minimal-ui",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
