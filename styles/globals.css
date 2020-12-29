@@ -57,22 +57,20 @@ body {
   margin: 0;
   font-family: "Open Sans", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 1.2rem;
 }
 
 h1,
 h2,
 h3 {
   color: var(--bbncreative-grey-3);
-}
-
-h2,
-h3 {
   font-family: "Staatliches";
   font-weight: 400;
 }
 
 h1 {
   font-size: 5rem;
+  line-height: 6.4rem;
   font-weight: bold;
 }
 
@@ -88,13 +86,12 @@ a {
   color: inherit;
 }
 
+a:hover {
+  color: #e8185f;
+}
+
 main {
   min-height: calc(100vh - 17rem);
   box-sizing: border-box;
   padding: 4rem 1rem;
-}
-
-p {
-  font-size: 1.2rem;
-  line-height: 1.7rem;
 }
