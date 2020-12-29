@@ -7,5 +7,5 @@ export default function Date({ dateString }) {
 }
 
 Date.propTypes = {
-    dateString: PropTypes.string
-}
+  dateString: PropTypes.string,
+};

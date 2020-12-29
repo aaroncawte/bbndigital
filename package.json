@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "eslint": "eslint . --config=.eslintrc.js"
+    "eslint": "eslint . --config=.eslintrc.js",
+    "eslint:fix": "eslint . --config=.eslintrc.js --fix"
   },
   "dependencies": {
     "date-fns": "^2.16.1",

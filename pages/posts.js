@@ -28,18 +28,18 @@ export default function Home({ allPostsData }) {
           <h2>Things I wanted to share with you</h2>
 
           <ul>
-          {allPostsData.map(({ id, date, title }) => (
-            <li key={id}>
-              <Link href="/posts/[id]" as={`/posts/${id}`}>
-                <a>{title}</a>
-              </Link>
-              <br />
-              <small>
-                <Date dateString={date} />
-              </small>
-            </li>
-          ))}
-        </ul>
+            {allPostsData.map(({ id, date, title }) => (
+              <li key={id}>
+                <Link href="/posts/[id]" as={`/posts/${id}`}>
+                  <a>{title}</a>
+                </Link>
+                <br />
+                <small>
+                  <Date dateString={date} />
+                </small>
+              </li>
+            ))}
+          </ul>
         </Container>
       </main>
 
@@ -49,9 +49,11 @@ export default function Home({ allPostsData }) {
 }
 
 Home.propTypes = {
-  allPostsData: PropTypes.arrayOf(PropTypes.shape({
-    id: PropTypes.string,
-    date: PropTypes.string,
-    title: PropTypes.string,
-  }))
-}
+  allPostsData: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string,
+      date: PropTypes.string,
+      title: PropTypes.string,
+    })
+  ),
+};

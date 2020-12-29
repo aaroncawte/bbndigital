@@ -8,22 +8,24 @@ import Link from "next/link";
 import styles from "../../styles/Home.module.css";
 
 export default function Post({ postData }) {
-    return (
-        <div className={styles.container}>
-            <CustomHead title={postData.title} />
-            <Navigation />
-            <main>
-                <Container>
-                    <article>
-                        <h1>{postData.title}</h1>
-                        <Date dateString={postData.date} />
-                        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-                    </article>
-                    <Link href="/posts/"><a>Back to all posts</a></Link>
-                </Container>
-            </main>
-        </div>
-    );
+  return (
+    <div className={styles.container}>
+      <CustomHead title={postData.title} />
+      <Navigation />
+      <main>
+        <Container>
+          <article>
+            <h1>{postData.title}</h1>
+            <Date dateString={postData.date} />
+            <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+          </article>
+          <Link href="/posts/">
+            <a>Back to all posts</a>
+          </Link>
+        </Container>
+      </main>
+    </div>
+  );
 }
 
 export async function getStaticPaths() {
@@ -44,10 +46,11 @@ export async function getStaticProps({ params }) {
 }
 
 Post.propTypes = {
-    postData: PropTypes.arrayOf(PropTypes.shape({
-        title: PropTypes.string,
-        date: PropTypes.string,
-        contentHtml: PropTypes.string
-
-    }))
-}
+  postData: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string,
+      date: PropTypes.string,
+      contentHtml: PropTypes.string,
+    })
+  ),
+};
