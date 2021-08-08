@@ -91,7 +91,7 @@ a:hover {
 }
 
 main {
-  min-height: calc(100vh - 17rem);
+  min-height: calc(100vh - 17rem - 1px);
   box-sizing: border-box;
-  padding: 4rem 1rem;
+  padding: 1rem;
 }
