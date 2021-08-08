@@ -11,9 +11,8 @@ export default function Home() {
 
       <main className={styles.main}>
         <h2 className={styles.headline}>
-          Isn&apos;t it nice when
-          <br />
-          things are <span className={styles.simpler}>simpler</span>?
+          Every developer needs a website{" "}
+          <span className={styles.simpler}>to pretend</span> to maintain, right?
         </h2>
       </main>
 
