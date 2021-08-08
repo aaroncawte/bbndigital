@@ -10,11 +10,11 @@ const Navigation = () => (
           <div className={styles.logo} />
         </a>
         <ul className={styles.menu}>
-          <li>
+          {/* <li>
             <a href="/posts" title="Words">
               Words
             </a>
-          </li>
+          </li> */}
         </ul>
       </div>
     </Container>
