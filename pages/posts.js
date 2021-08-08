@@ -40,6 +40,7 @@ export default function Home({ allPostsData }) {
               </li>
             ))}
           </ul>
+          {!allPostsData.length && <p>Nothing to see here (for now)!</p>}
         </Container>
       </main>
 
