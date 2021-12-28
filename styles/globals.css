@@ -71,7 +71,7 @@ h3 {
 h1 {
   font-size: 5rem;
   line-height: 6.4rem;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 h2 {
@@ -86,8 +86,10 @@ a {
   color: inherit;
 }
 
-a:hover {
-  color: #e8185f;
+a:hover,
+a:focus {
+  outline: none;
+  text-decoration-color: #e8185f;
 }
 
 main {
