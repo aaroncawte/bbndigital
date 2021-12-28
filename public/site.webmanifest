@@ -1,7 +1,7 @@
 {
-  "name": "BBN.DGTL",
-  "short_name": "BBN.DGTL",
-  "description": "BBN.DGTL is a portfolio and blog site for Aaron Cawte.",
+  "name": "bbn.digital",
+  "short_name": "bbn.digital",
+  "description": "bbn.digital is a portfolio and blog site for Aaron Cawte.",
   "start_url": "/",
   "display": "minimal-ui",
   "icons": [

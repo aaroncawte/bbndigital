@@ -6,7 +6,7 @@ const Navigation = () => (
   <nav className={styles.nav}>
     <Container>
       <div className={styles.navContainer}>
-        <a href="/" title="Home - BBN.DGTL">
+        <a href="/" title="Home - bbn.digital">
           <div className={styles.logo} />
         </a>
         <ul className={styles.menu}>
