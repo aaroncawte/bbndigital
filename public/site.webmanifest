@@ -3,7 +3,7 @@
   "short_name": "bbn.digital",
   "description": "bbn.digital is a portfolio and blog site for Aaron Cawte.",
   "start_url": "/",
-  "display": "minimal-ui",
+  "display": "browser",
   "icons": [
     {
       "src": "/img/android-chrome-192x192.png",
