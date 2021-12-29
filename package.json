@@ -14,7 +14,7 @@
     "gray-matter": "^4.0.2",
     "next": "^10.0.5",
     "next-pwa": "^3.1.5",
-    "react": "16.13.1",
+    "react": "16.14.0",
     "react-dom": "16.13.1",
     "remark": "^13.0.0",
     "remark-html": "^13.0.2",
