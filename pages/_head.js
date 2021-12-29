@@ -42,8 +42,8 @@ const CustomHead = ({ title }) => (
     <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
 
     {/* Open Graph */}
-    <meta property="og:title" content={`${title} - BBN.DGTL`} />
-    <meta property="og:site_name" content="BBN.DGTL" />
+    <meta property="og:title" content={`${title} - bbn.digital`} />
+    <meta property="og:site_name" content="bbn.digital" />
     <meta property="og:url" content="https://bbn.digital" />
     <meta
       property="og:description"
@@ -56,14 +56,14 @@ const CustomHead = ({ title }) => (
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@bbndigital" />
     <meta name="twitter:creator" content="@aaroncawte" />
-    <meta name="twitter:title" content={`${title} - BBN.DGTL`} />
+    <meta name="twitter:title" content={`${title} - bbn.digital`} />
     <meta
       name="twitter:description"
       content="Words and work from Aaron Cawte, a front-end developer and product designer based in London, UK."
     />
     <meta name="twitter:image" content="/img/open-graph.png" />
 
-    <title>{`${title} - BBN.DGTL`}</title>
+    <title>{`${title} - bbn.digital`}</title>
   </Head>
 );
 
