@@ -39,7 +39,6 @@ const CustomHead = ({ title }) => (
     <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#e8185f" />
     <meta name="msapplication-TileColor" content="#e8185f" />
     <meta name="theme-color" content="#e8185f"></meta>
-    <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
 
     {/* Open Graph */}
     <meta property="og:title" content={`${title} - bbn.digital`} />
