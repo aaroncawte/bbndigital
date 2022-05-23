@@ -3,12 +3,12 @@
 
 version: 2
 updates:
-    - package-ecosystem: 'npm'
-      directory: '/'
-      schedule:
-          interval: 'weekly'
-          day: 'sunday'
-          time: '08:00'
-          timezone: 'Europe/London'
-      reviewers:
-          - 'aaroncawte'
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "tuesday"
+      time: "11:00"
+      timezone: "Europe/London"
+    reviewers:
+      - "aaroncawte"
