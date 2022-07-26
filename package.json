@@ -17,7 +17,7 @@
     "react-dom": "18.2.0",
     "remark": "14.0.2",
     "remark-html": "15.0.1",
-    "webpack": "5.73.0"
+    "webpack": "5.74.0"
   },
   "devDependencies": {
     "eslint": "8.20.0",
