@@ -19,9 +19,7 @@ export default function Post({ postData }) {
             <Date dateString={postData.date} />
             <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
           </article>
-          <Link href="/posts/">
-            <a>Back to all posts</a>
-          </Link>
+          <Link href="/posts/">Back to all posts</Link>
         </Container>
       </main>
     </div>
