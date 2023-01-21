@@ -1,8 +1,8 @@
-import CustomHead from "./_head";
 import Container from "../components/Container";
 import Footer from "../components/Footer";
 import Navigation from "../components/Navigation";
 import styles from "../styles/Home.module.css";
+import CustomHead from "./_head";
 
 export default function Home() {
   return (

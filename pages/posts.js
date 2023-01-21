@@ -1,12 +1,12 @@
 import PropTypes from "prop-types";
-import CustomHead from "./_head";
+import Link from "next/link";
 import Footer from "../components/Footer";
 import Container from "../components/Container";
 import Navigation from "../components/Navigation";
 import Date from "../components/Date";
 import styles from "../styles/Home.module.css";
 import { getSortedPostsData } from "../lib/posts";
-import Link from "next/link";
+import CustomHead from "./_head";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();

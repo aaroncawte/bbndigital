@@ -1,11 +1,11 @@
 import PropTypes from "prop-types";
-import CustomHead from "../_head";
+import Link from "next/link";
 import Container from "../../components/Container";
 import Navigation from "../../components/Navigation";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import Date from "../../components/Date";
-import Link from "next/link";
 import styles from "../../styles/Home.module.css";
+import CustomHead from "../_head";
 
 export default function Post({ postData }) {
   return (
