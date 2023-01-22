@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const MainStyled = styled.main`
   width: 60rem;
@@ -7,8 +7,14 @@ export const MainStyled = styled.main`
 `;
 
 export const SimplerStyled = styled.a`
-  color: #a900ff;
-  background: -webkit-linear-gradient(-45deg, #e8185f, #a900ff);
+  ${({ theme }) => css`
+    color: ${theme.colors.purple};
+    background: -webkit-linear-gradient(
+      -45deg,
+      ${theme.colors.pink},
+      ${theme.colors.purple}
+    );
+  `};
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 `;

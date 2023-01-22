@@ -26,7 +26,7 @@ export const NavTitleStyled = styled.div`
     &:hover,
     &:focus {
       text-decoration: underline;
-      text-decoration-color: #e8185f;
+      text-decoration-color: ${({ theme }) => theme.colors.pink};
     }
   }
 `;
@@ -38,5 +38,5 @@ export const NameStyled = styled.span`
   padding: 0;
   font-family: "Staatliches";
   font-family: 400;
-  color: #161616;
+  color: ${({ theme }) => theme.colors.pink};
 `;

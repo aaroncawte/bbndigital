@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const FooterStyled = styled.footer`
   font-family: "Staatliches";
-  color: #445;
+  color: ${({ theme }) => theme.colors.grey2};
   width: 100%;
   height: 6rem;
   padding: 2rem 0;
