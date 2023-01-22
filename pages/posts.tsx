@@ -1,23 +1,17 @@
-import PropTypes from "prop-types";
 import Link from "next/link";
 import Footer from "../components/Footer";
 import Container from "../components/Container";
 import Navigation from "../components/Navigation";
 import Date from "../components/Date";
 import styles from "../styles/Home.module.css";
-import { getSortedPostsData } from "../lib/posts";
+import { getSortedPostsData, Post } from "../lib/posts";
 import CustomHead from "./_head";
 
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData();
-  return {
-    props: {
-      allPostsData,
-    },
-  };
-}
+type HomeProps = {
+  allPostsData: Post[];
+};
 
-export default function Home({ allPostsData }) {
+export default function Home({ allPostsData }: HomeProps) {
   return (
     <div className={styles.container}>
       <CustomHead title="Words" />
@@ -49,12 +43,11 @@ export default function Home({ allPostsData }) {
   );
 }
 
-Home.propTypes = {
-  allPostsData: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string,
-      date: PropTypes.string,
-      title: PropTypes.string,
-    })
-  ),
-};
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData();
+  return {
+    props: {
+      allPostsData,
+    },
+  };
+}

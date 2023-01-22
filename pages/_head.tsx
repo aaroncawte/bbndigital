@@ -1,7 +1,10 @@
 import Head from "next/head";
-import PropTypes from "prop-types";
 
-const CustomHead = ({ title }) => (
+type HeadProps = {
+  title?: string;
+};
+
+const CustomHead = ({ title = "Home" }: HeadProps) => (
   <Head>
     <meta charSet="utf-8" />
     <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -65,13 +68,5 @@ const CustomHead = ({ title }) => (
     <title>{`${title} - bbn.digital`}</title>
   </Head>
 );
-
-CustomHead.propTypes = {
-  title: PropTypes.string,
-};
-
-CustomHead.defaultProps = {
-  title: "Home",
-};
 
 export default CustomHead;

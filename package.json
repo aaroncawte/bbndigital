@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "eslint": "eslint . --config=.eslintrc.js",
-    "eslint:fix": "eslint . --config=.eslintrc.js --fix"
+    "eslint:fix": "eslint . --config=.eslintrc.js --fix",
+    "type-check": "tsc"
   },
   "dependencies": {
     "date-fns": "2.29.3",
@@ -22,6 +23,8 @@
   },
   "devDependencies": {
     "@krakentech/eslint-config": "^0.6.1",
+    "@types/node": "18.11.18",
+    "@types/react": "^18.0.27",
     "@typescript-eslint/parser": "^5.48.2",
     "eslint": "8.32.0",
     "eslint-config-next": "^13.1.4",

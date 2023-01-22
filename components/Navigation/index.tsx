@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Container from "../Container";
 import styles from "./Navigation.module.css";
 
@@ -6,9 +7,9 @@ const Navigation = () => (
     <Container>
       <div className={styles.navContainer}>
         <div className={styles.navTitle}>
-          <a href="/" title="Home - bbn.digital">
+          <Link href="/" title="Home - bbn.digital">
             <h1 className={styles.navH1}>bbn.digital</h1>
-          </a>
+          </Link>
         </div>
         <ul className={styles.menu}>
           {/* <li>
