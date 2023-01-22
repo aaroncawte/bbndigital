@@ -24,8 +24,10 @@ export const NavTitleStyled = styled.div`
     text-decoration: none;
 
     &:hover,
-    &:focus {
+    &:active,
+    &:focus-visible {
       text-decoration: underline;
+      text-decoration-thickness: 5px;
       text-decoration-color: ${({ theme }) => theme.colors.pink};
     }
   }
@@ -38,5 +40,5 @@ export const NameStyled = styled.span`
   padding: 0;
   font-family: "Staatliches";
   font-family: 400;
-  color: ${({ theme }) => theme.colors.pink};
+  color: ${({ theme }) => theme.colors.grey3};
 `;
