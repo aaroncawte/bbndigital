@@ -31,9 +31,12 @@ export const NavTitleStyled = styled.div`
   }
 `;
 
-export const H1Styled = styled.h1`
+export const NameStyled = styled.span`
   font-size: 3.2rem;
   line-height: 6rem;
   margin: 0;
   padding: 0;
+  font-family: "Staatliches";
+  font-family: 400;
+  color: #161616;
 `;

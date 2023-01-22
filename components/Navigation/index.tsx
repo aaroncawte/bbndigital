@@ -4,7 +4,7 @@ import {
   NavStyled,
   NavContainerStyled,
   NavTitleStyled,
-  H1Styled,
+  NameStyled,
 } from "./Navigation.styled";
 
 const Navigation = () => (
@@ -12,8 +12,8 @@ const Navigation = () => (
     <Container>
       <NavContainerStyled>
         <NavTitleStyled>
-          <Link href="/" title="Home - bbn.digital">
-            <H1Styled>bbn.digital</H1Styled>
+          <Link href="/" title="Homepage">
+            <NameStyled>bbn.digital</NameStyled>
           </Link>
         </NavTitleStyled>
       </NavContainerStyled>
