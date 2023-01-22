@@ -3,7 +3,6 @@ import Footer from "../components/Footer";
 import Container from "../components/Container";
 import Navigation from "../components/Navigation";
 import Date from "../components/Date";
-import styles from "../styles/Home.module.css";
 import { getSortedPostsData, Post } from "../lib/posts";
 import CustomHead from "./_head";
 
@@ -13,7 +12,7 @@ type HomeProps = {
 
 export default function Home({ allPostsData }: HomeProps) {
   return (
-    <div className={styles.container}>
+    <div>
       <CustomHead title="Words" />
       <Navigation />
 

@@ -1,26 +1,24 @@
 import Link from "next/link";
 import Container from "../Container";
-import styles from "./Navigation.module.css";
+import {
+  NavStyled,
+  NavContainerStyled,
+  NavTitleStyled,
+  H1Styled,
+} from "./Navigation.styled";
 
 const Navigation = () => (
-  <nav className={styles.nav}>
+  <NavStyled>
     <Container>
-      <div className={styles.navContainer}>
-        <div className={styles.navTitle}>
+      <NavContainerStyled>
+        <NavTitleStyled>
           <Link href="/" title="Home - bbn.digital">
-            <h1 className={styles.navH1}>bbn.digital</h1>
+            <H1Styled>bbn.digital</H1Styled>
           </Link>
-        </div>
-        <ul className={styles.menu}>
-          {/* <li>
-            <a href="/posts" title="Words">
-              Words
-            </a>
-          </li> */}
-        </ul>
-      </div>
+        </NavTitleStyled>
+      </NavContainerStyled>
     </Container>
-  </nav>
+  </NavStyled>
 );
 
 export default Navigation;

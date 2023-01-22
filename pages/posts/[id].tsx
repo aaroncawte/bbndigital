@@ -1,10 +1,9 @@
 import Link from "next/link";
+import CustomHead from "../_head";
+import { getAllPostIds, getPostData, Post as PostType } from "../../lib/posts";
 import Container from "../../components/Container";
 import Navigation from "../../components/Navigation";
-import { getAllPostIds, getPostData, Post as PostType } from "../../lib/posts";
 import Date from "../../components/Date";
-import styles from "../../styles/Home.module.css";
-import CustomHead from "../_head";
 
 type PostProps = {
   postData: PostType;
@@ -12,7 +11,7 @@ type PostProps = {
 
 export default function Post({ postData }: PostProps) {
   return (
-    <div className={styles.container}>
+    <div>
       <CustomHead title={postData.title} />
       <Navigation />
       <main>
