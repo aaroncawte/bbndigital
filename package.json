@@ -17,13 +17,14 @@
     "react-dom": "18.2.0",
     "remark": "14.0.2",
     "remark-html": "15.0.1",
+    "typescript": "^4.9.4",
     "webpack": "5.75.0"
   },
   "devDependencies": {
+    "@krakentech/eslint-config": "^0.6.1",
+    "@typescript-eslint/parser": "^5.48.2",
     "eslint": "8.32.0",
-    "eslint-config-prettier": "8.6.0",
-    "eslint-plugin-prettier": "4.2.1",
-    "eslint-plugin-react": "7.32.1",
+    "eslint-config-next": "^13.1.4",
     "prettier": "2.8.3"
   }
 }
