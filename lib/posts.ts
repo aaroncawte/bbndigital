@@ -1,8 +1,15 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import remark from "remark";
+import { remark } from "remark";
 import html from "remark-html";
+
+export type Post = {
+  id: string;
+  date?: string;
+  title?: string;
+  contentHtml?: string;
+};
 
 const postsDirectory = path.join(process.cwd(), "posts");
 
@@ -10,7 +17,7 @@ export function getSortedPostsData() {
   // Get file names under /posts
   if (fs.existsSync(postsDirectory)) {
     const fileNames = fs.readdirSync(postsDirectory);
-    const allPostsData = fileNames.map((fileName) => {
+    const allPostsData: Post[] = fileNames.map((fileName) => {
       // Remove ".md" from file name to get id
       const id = fileName.replace(/\.md$/, "");
 

@@ -1,16 +1,16 @@
-import CustomHead from "./_head";
 import Container from "../components/Container";
 import Footer from "../components/Footer";
 import Navigation from "../components/Navigation";
-import styles from "../styles/Home.module.css";
+import { MainStyled, SimplerStyled } from "../styles/Home.styled";
+import CustomHead from "./_head";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <CustomHead title="Home" />
       <Navigation />
 
-      <main className={styles.main}>
+      <MainStyled>
         <Container>
           <p>
             Hey you!{" "}
@@ -25,40 +25,36 @@ export default function Home() {
           </p>
           <p>
             And most of the time, I do that for Octopus Energy. Here&apos;s my{" "}
-            <a
+            <SimplerStyled
               href="https://share.octopus.energy/denim-wind-445"
-              className={styles.simpler}
               target="_blank"
               rel="noreferrer"
             >
               referral link
-            </a>
+            </SimplerStyled>
             .
           </p>
           <p>
             While I get around to showing off my work here, you can reach me on{" "}
-            <a
+            <SimplerStyled
               href="mailto:aaron@bbn.digital"
-              className={styles.simpler}
               target="_blank"
               rel="noreferrer"
             >
               aaron@bbn.digital
-            </a>
+            </SimplerStyled>
             , or on the bird app using{" "}
-            <a
+            <SimplerStyled
               href="https://twitter.com/aaroncawte"
-              className={styles.simpler}
               target="_blank"
               rel="noreferrer"
             >
               @aaroncawte
-            </a>
+            </SimplerStyled>
             .
           </p>
         </Container>
-      </main>
-
+      </MainStyled>
       <Footer />
     </div>
   );

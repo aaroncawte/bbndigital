@@ -1,15 +1,17 @@
-import PropTypes from "prop-types";
+import Link from "next/link";
 import CustomHead from "../_head";
+import { getAllPostIds, getPostData, Post as PostType } from "../../lib/posts";
 import Container from "../../components/Container";
 import Navigation from "../../components/Navigation";
-import { getAllPostIds, getPostData } from "../../lib/posts";
 import Date from "../../components/Date";
-import Link from "next/link";
-import styles from "../../styles/Home.module.css";
 
-export default function Post({ postData }) {
+type PostProps = {
+  postData: PostType;
+};
+
+export default function Post({ postData }: PostProps) {
   return (
-    <div className={styles.container}>
+    <div>
       <CustomHead title={postData.title} />
       <Navigation />
       <main>
@@ -19,9 +21,7 @@ export default function Post({ postData }) {
             <Date dateString={postData.date} />
             <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
           </article>
-          <Link href="/posts/">
-            <a>Back to all posts</a>
-          </Link>
+          <Link href="/posts/">Back to all posts</Link>
         </Container>
       </main>
     </div>
@@ -44,13 +44,3 @@ export async function getStaticProps({ params }) {
     },
   };
 }
-
-Post.propTypes = {
-  postData: PropTypes.arrayOf(
-    PropTypes.shape({
-      title: PropTypes.string,
-      date: PropTypes.string,
-      contentHtml: PropTypes.string,
-    })
-  ),
-};

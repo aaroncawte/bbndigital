@@ -1,11 +1,10 @@
-import PropTypes from "prop-types";
 import { parseISO, format } from "date-fns";
 
-export default function Date({ dateString }) {
+type DateArgs = {
+  dateString: string;
+};
+
+export default function Date({ dateString }: DateArgs) {
   const date = parseISO(dateString);
   return <time dateTime={dateString}>{format(date, "LLLL d, yyyy")}</time>;
 }
-
-Date.propTypes = {
-  dateString: PropTypes.string,
-};
