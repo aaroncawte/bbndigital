@@ -1,12 +1,12 @@
-import Link from "next/link";
 import Container from "../components/Container";
 import Footer from "../components/Footer";
 import Navigation from "../components/Navigation";
+import PostPreviewList from "../components/PostPreviewList";
+import PostPreview from "../components/PostPreview";
 import { MainStyled, SimplerStyled } from "../styles/Home.styled";
 import CustomHead from "./_head";
 
 export default function Home() {
-  const showPosts = true;
   return (
     <div>
       <CustomHead title="Home" />
@@ -56,20 +56,10 @@ export default function Home() {
             .
           </p>
           <h2>Posts</h2>
-          {showPosts ? (
-            <>
-              <p>Things I wanted to share with you.</p>
-              <ul>
-                <li>
-                  <Link href="/posts/example">example title</Link>
-                  <br />
-                  <small>bio</small>
-                </li>
-              </ul>
-            </>
-          ) : (
-            <p>Nothing to see here (for now)!</p>
-          )}
+
+          <p>Things I wanted to share with you.</p>
+          <PostPreviewList>
+          </PostPreviewList>
         </Container>
       </MainStyled>
       <Footer />

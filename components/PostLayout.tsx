@@ -6,7 +6,7 @@ import Date from "./Date";
 import Navigation from "./Navigation";
 import Footer from "./Footer";
 
-type PostMeta = {
+export type PostMeta = {
   title: string;
   publishedAt?: string;
   description?: string;
