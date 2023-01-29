@@ -3,9 +3,15 @@ import { useTheme } from "styled-components";
 
 type HeadProps = {
   title?: string;
+  description?: string;
+  ogImage?: string;
 };
 
-const CustomHead = ({ title = "Home" }: HeadProps) => {
+const CustomHead = ({
+  title = "Home",
+  description = "Words and work from Aaron Cawte, a front-end developer and product designer based in London, UK.",
+  ogImage = "/img/open-graph.png",
+}: HeadProps) => {
   const theme = useTheme();
   return (
     <Head>
@@ -15,10 +21,7 @@ const CustomHead = ({ title = "Home" }: HeadProps) => {
         name="viewport"
         content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
       />
-      <meta
-        name="description"
-        content="Words and work from Aaron Cawte, a front-end developer and product designer based in London, UK."
-      />
+      <meta name="description" content={description} />
       <meta
         name="keywords"
         content="blog,words,work,product,design,developer,web,london,uk"
@@ -54,23 +57,17 @@ const CustomHead = ({ title = "Home" }: HeadProps) => {
       <meta property="og:title" content={`${title} - bbn.digital`} />
       <meta property="og:site_name" content="bbn.digital" />
       <meta property="og:url" content="https://bbn.digital" />
-      <meta
-        property="og:description"
-        content="Words and work from Aaron Cawte, a front-end developer and product designer based in London, UK."
-      />
+      <meta property="og:description" content={description} />
       <meta property="og:type" content="website" />
-      <meta property="og:image" content="/img/open-graph.png" />
+      <meta property="og:image" content={ogImage} />
 
       {/* Twitter Cards */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@bbndigital" />
       <meta name="twitter:creator" content="@aaroncawte" />
       <meta name="twitter:title" content={`${title} - bbn.digital`} />
-      <meta
-        name="twitter:description"
-        content="Words and work from Aaron Cawte, a front-end developer and product designer based in London, UK."
-      />
-      <meta name="twitter:image" content="/img/open-graph.png" />
+      <meta name="twitter:description" content={description} />
+      <meta name="twitter:image" content={ogImage} />
 
       <title>{`${title} - bbn.digital`}</title>
     </Head>
