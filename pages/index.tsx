@@ -1,9 +1,14 @@
 import Container from "../components/Container";
 import Footer from "../components/Footer";
 import PostPreviewList from "../components/PostPreviewList";
+import PostPreview from "../components/PostPreview";
 import { MainStyled, SimplerStyled } from "../styles/Home.styled";
 import generateRssFeed from "../utils/generateRssFeed";
 import CustomHead from "./_head";
+
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import { meta as metaContendingWithChaos } from "./posts/contending-with-chaos.mdx";
 
 export default function Home() {
   return (
@@ -54,7 +59,12 @@ export default function Home() {
           <h2>Posts</h2>
 
           <p>Things I wanted to share with you.</p>
-          <PostPreviewList />
+          <PostPreviewList>
+            <PostPreview
+              slug="contending-with-chaos"
+              meta={metaContendingWithChaos}
+            />
+          </PostPreviewList>
         </Container>
       </MainStyled>
       <Footer />
