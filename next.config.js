@@ -32,12 +32,14 @@ module.exports = {
     styledComponents: true,
   },
   async headers() {
-    return [
-      {
-        // Apply these headers to all routes in your application.
-        source: "/:path*",
-        headers: securityHeaders,
-      },
-    ];
+    return process.env.NODE_ENV == "production"
+      ? [
+          {
+            // Apply these headers to all routes in your application.
+            source: "/:path*",
+            headers: securityHeaders,
+          },
+        ]
+      : [];
   },
 };
