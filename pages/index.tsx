@@ -2,6 +2,7 @@ import Container from "../components/Container";
 import Footer from "../components/Footer";
 import PostPreviewList from "../components/PostPreviewList";
 import { MainStyled, SimplerStyled } from "../styles/Home.styled";
+import generateRssFeed from "../utils/generateRssFeed";
 import CustomHead from "./_head";
 
 export default function Home() {
@@ -59,4 +60,10 @@ export default function Home() {
       <Footer />
     </div>
   );
+}
+
+export async function getStaticProps() {
+  await generateRssFeed();
+
+  return { props: { someProp: true } };
 }
