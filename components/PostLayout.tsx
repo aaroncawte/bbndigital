@@ -8,10 +8,12 @@ import Footer from "./Footer";
 
 type PostMeta = {
   title: string;
-  publishedAt: string;
+  publishedAt?: string;
   description?: string;
   ogImage?: string;
+  noIndex?: boolean;
 };
+
 type PostLayoutProps = {
   meta: PostMeta;
   children: ReactNode;
@@ -22,15 +24,18 @@ const PostLayout = ({ meta, children }: PostLayoutProps) => (
       title={meta.title}
       description={meta.description}
       ogImage={meta.ogImage}
+      noIndex={meta.noIndex}
     />
     <Navigation />
     <main>
       <Container>
         <article>
           <h1>{meta.title}</h1>
-          <em>
-            <Date dateString={meta.publishedAt} />
-          </em>
+          {meta.publishedAt && (
+            <em>
+              <Date dateString={meta.publishedAt} />
+            </em>
+          )}
           <>{children}</>
         </article>
         <Link href="/">Back to homepage</Link>

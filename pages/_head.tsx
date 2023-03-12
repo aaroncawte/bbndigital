@@ -5,12 +5,14 @@ type HeadProps = {
   title?: string;
   description?: string;
   ogImage?: string;
+  noIndex?: boolean;
 };
 
 const CustomHead = ({
   title = "Home",
   description = "Words and work from Aaron Cawte, a front-end developer and product designer based in London, UK.",
   ogImage = "/img/open-graph.png",
+  noIndex = false,
 }: HeadProps) => {
   const theme = useTheme();
   return (
@@ -20,11 +22,6 @@ const CustomHead = ({
       <meta
         name="viewport"
         content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
-      />
-      <meta name="description" content={description} />
-      <meta
-        name="keywords"
-        content="blog,words,work,product,design,developer,web,london,uk"
       />
       <link
         rel="apple-touch-icon"
@@ -53,22 +50,35 @@ const CustomHead = ({
       <meta name="msapplication-TileColor" content={theme.colors.pink} />
       <meta name="theme-color" content={theme.colors.pink}></meta>
 
-      {/* Open Graph */}
-      <meta property="og:title" content={`${title} - bbn.digital`} />
-      <meta property="og:site_name" content="bbn.digital" />
-      <meta property="og:url" content="https://bbn.digital" />
-      <meta property="og:description" content={description} />
-      <meta property="og:type" content="website" />
-      <meta property="og:image" content={ogImage} />
+      {noIndex ? (
+        <meta name="robots" content="noindex" />
+      ) : (
+        <>
+          {/* Metadata */}
+          <meta name="description" content={description} />
+          <meta
+            name="keywords"
+            content="blog,words,work,product,design,developer,web,london,uk"
+          />
 
-      {/* Twitter Cards */}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content="@bbndigital" />
-      <meta name="twitter:creator" content="@aaroncawte" />
-      <meta name="twitter:title" content={`${title} - bbn.digital`} />
-      <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={ogImage} />
+          {/* Open Graph */}
+          <meta property="og:title" content={`${title} - bbn.digital`} />
+          <meta property="og:site_name" content="bbn.digital" />
+          <meta property="og:url" content="https://bbn.digital" />
+          <meta property="og:description" content={description} />
+          <meta property="og:type" content="website" />
+          <meta property="og:image" content={ogImage} />
+          <meta property="og:locale" content="en_GB" />
 
+          {/* Twitter Cards */}
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:site" content="@bbndigital" />
+          <meta name="twitter:creator" content="@aaroncawte" />
+          <meta name="twitter:title" content={`${title} - bbn.digital`} />
+          <meta name="twitter:description" content={description} />
+          <meta name="twitter:image" content={ogImage} />
+        </>
+      )}
       <title>{`${title} - bbn.digital`}</title>
     </Head>
   );
