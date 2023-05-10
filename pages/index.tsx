@@ -19,6 +19,7 @@ export default function Home({ allPostsData }: HomeProps) {
 
       <MainStyled>
         <Container>
+          <h1>BBN.DIGITAL</h1>
           <p>
             Hey you!{" "}
             <span role="img" aria-label="Waving hand sign emoji">
@@ -26,23 +27,21 @@ export default function Home({ allPostsData }: HomeProps) {
             </span>
           </p>
           <p>
-            I&apos;m Aaron. Sometimes, I make stuff on the Internet. I take
-            photos, make videos, and dabble in social, but mostly I design and
-            build websites.
-          </p>
-          <p>
-            And most of the time, I do that for Octopus Energy. Here&apos;s my{" "}
+            I&apos;m Aaron. I make stuff on the Internet. I&apos;ve taken
+            photos, made videos, and dabbled in social, but mostly I design and
+            build websites. And most of the time, I do that for Octopus Energy.
+            Sign up and we can{" "}
             <SimplerStyled
               href="https://share.octopus.energy/denim-wind-445"
               target="_blank"
               rel="noreferrer"
             >
-              referral link
+              share £100
             </SimplerStyled>
             .
           </p>
           <p>
-            While I get around to showing off my work here, you can reach me on{" "}
+            I&apos;m always happy to talk shop, and you can reach me on{" "}
             <SimplerStyled
               href="mailto:aaron@bbn.digital"
               target="_blank"
