@@ -29,6 +29,10 @@ export const CalloutStyled = styled.div<{ variant: CalloutVariants }>`
     border-color: ${theme.colors[variant]};
     background-color: ${theme.wash[variant]};
 
+    a {
+      text-decoration-color: ${theme.colors[variant]};
+    }
+
     a:hover,
     a:focus {
       color: ${theme.colors[variant]};
