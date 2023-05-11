@@ -38,7 +38,11 @@
 }
 
 :root {
-  --bbncreative-grey-3: #161616;
+  --colors-offBlack: #161616;
+  --colors-pink: #e8185f;
+  --tints-pink: hsl(340deg, 82%, 20%);
+  --wash-offBlack: hsl(0deg 0% 95%);
+  --wash-purple: hsl(280deg 100% 95%);
 }
 
 html,
@@ -57,7 +61,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--bbncreative-grey-3);
+  color: var(--colors-offBlack);
   font-weight: 600;
 }
 
@@ -105,17 +109,59 @@ h6 {
 
 a {
   color: inherit;
+  text-decoration-color: var(--colors-pink);
 }
 
 a:hover,
 a:active,
 a:focus-visible {
   outline: none;
-  text-decoration-color: #e8185f;
+  color: #e8185f;
+  text-decoration-color: var(--colors-pink);
 }
 
 main {
-  min-height: calc(100vh - 307px);
+  min-height: calc(100vh - 176px);
   box-sizing: border-box;
   padding: 1rem;
+}
+
+input, button {
+  font-family: "Staatliches";
+  height: 3.2rem;
+  line-height: 3.2rem;
+  font-size: 1.2rem;
+  padding: 0 1.2rem;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+}
+
+input {
+  background: var(--wash-offBlack);
+  border: 0.1rem solid var(--wash-offBlack);
+  transition: 0.2s;
+}
+
+input[type="email"]:hover, input[type="email"]:focus-within {
+  filter: brightness(95%);
+  border-color: var(--colors-offBlack);
+}
+
+button[type="submit"], input[type="submit"] {
+  line-height: 2.8rem;
+  background-color: var(--colors-pink);
+  border: 0.1rem solid var(--colors-pink);
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button[type="submit"]:active, input[type="submit"]:active {
+ background-color: var(--tints-pink);
+}
+
+button[type="submit"]:hover, input[type="submit"]:hover, button[type="submit"]:focus-within, input[type="submit"]:focus-within {
+  filter: brightness(95%);
+  border-color: var(--tints-pink);
 }
