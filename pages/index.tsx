@@ -1,6 +1,5 @@
 import Container from "../components/Container";
 import Footer from "../components/Footer";
-import Navigation from "../components/Navigation";
 import PostPreviewList from "../components/PostPreviewList";
 import { MainStyled, SimplerStyled } from "../styles/Home.styled";
 import CustomHead from "./_head";
@@ -9,8 +8,6 @@ export default function Home() {
   return (
     <div>
       <CustomHead title="Home" />
-      <Navigation />
-
       <MainStyled>
         <Container>
           <h1>BBN.DIGITAL</h1>
