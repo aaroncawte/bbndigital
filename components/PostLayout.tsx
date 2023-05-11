@@ -3,7 +3,6 @@ import Link from "next/link";
 import CustomHead from "../pages/_head";
 import Container from "./Container";
 import Date from "./Date";
-import Navigation from "./Navigation";
 import Footer from "./Footer";
 
 export type PostMeta = {
@@ -26,7 +25,6 @@ const PostLayout = ({ meta, children }: PostLayoutProps) => (
       ogImage={meta.ogImage}
       noIndex={meta.noIndex}
     />
-    <Navigation />
     <main>
       <Container>
         <article>
