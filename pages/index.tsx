@@ -2,7 +2,6 @@ import Link from "next/link";
 import Container from "../components/Container";
 import Date from "../components/Date";
 import Footer from "../components/Footer";
-import Navigation from "../components/Navigation";
 import { MainStyled, SimplerStyled } from "../styles/Home.styled";
 import { getSortedPostsData, Post } from "../lib/posts";
 import CustomHead from "./_head";
@@ -15,8 +14,6 @@ export default function Home({ allPostsData }: HomeProps) {
   return (
     <div>
       <CustomHead title="Home" />
-      <Navigation />
-
       <MainStyled>
         <Container>
           <h1>BBN.DIGITAL</h1>
