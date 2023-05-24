@@ -30,7 +30,7 @@
     "@types/styled-components": "^5.1.26",
     "@typescript-eslint/parser": "^5.59.6",
     "eslint": "8.41.0",
-    "eslint-config-next": "^13.4.2",
+    "eslint-config-next": "^13.4.3",
     "prettier": "2.8.8"
   }
 }
