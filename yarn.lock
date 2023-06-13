@@ -242,10 +242,10 @@
     "@jridgewell/resolve-uri" "3.1.0"
     "@jridgewell/sourcemap-codec" "1.4.14"
 
-"@krakentech/eslint-config@^0.6.2":
-  version "0.6.2"
-  resolved "https://registry.yarnpkg.com/@krakentech/eslint-config/-/eslint-config-0.6.2.tgz#99976f2ef15c95c13adec66d03278f21c52b51e9"
-  integrity sha512-TF0PjtdgyGDgGPRS3g5S06/u6Mceky47hUSGidA1I0lpfZjfQQMW3PUpXgaFhd6cnxIcEt+eali+EbCK7GE62w==
+"@krakentech/eslint-config@^0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@krakentech/eslint-config/-/eslint-config-0.7.0.tgz#8f2a8688de84c81441c8d627735b53f1704264b8"
+  integrity sha512-C/SE0i1NW5EpXWWU1fy7DvTRRmB/XNXIhohfujCHu90YfLW/UA6V02TvUeYa/yKlatwhJAs77Lq8acaUcGPS4Q==
   dependencies:
     "@rushstack/eslint-patch" "1.2.0"
     "@typescript-eslint/eslint-plugin" "5.54.0"
