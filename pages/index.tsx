@@ -1,17 +1,11 @@
-import Link from "next/link";
 import Container from "../components/Container";
-import Date from "../components/Date";
 import Footer from "../components/Footer";
 import Navigation from "../components/Navigation";
 import { MainStyled, SimplerStyled } from "../styles/Home.styled";
-import { getSortedPostsData, Post } from "../lib/posts";
 import CustomHead from "./_head";
 
-type HomeProps = {
-  allPostsData: Post[];
-};
-
-export default function Home({ allPostsData }: HomeProps) {
+export default function Home() {
+  const showPosts = false;
   return (
     <div>
       <CustomHead title="Home" />
@@ -61,23 +55,8 @@ export default function Home({ allPostsData }: HomeProps) {
             .
           </p>
           <h2>Posts</h2>
-          {allPostsData.length > 0 ? (
-            <>
-              <p>Things I wanted to share with you.</p>
-              <ul>
-                {allPostsData.map(({ id, date, title }) => (
-                  <li key={id}>
-                    <Link href="/posts/[id]" as={`/posts/${id}`}>
-                      {title}
-                    </Link>
-                    <br />
-                    <small>
-                      <Date dateString={date} />
-                    </small>
-                  </li>
-                ))}
-              </ul>
-            </>
+          {showPosts ? (
+            <p>Things I wanted to share with you.</p>
           ) : (
             <p>Nothing to see here (for now)!</p>
           )}
@@ -86,13 +65,4 @@ export default function Home({ allPostsData }: HomeProps) {
       <Footer />
     </div>
   );
-}
-
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData();
-  return {
-    props: {
-      allPostsData,
-    },
-  };
 }
