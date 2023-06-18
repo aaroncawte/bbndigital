@@ -1,0 +1,19 @@
+name: bbn.digital
+
+on: push
+
+jobs:
+  linter:
+    name: Run linter
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: yarn
+      - run: yarn eslint
+  type-check:
+    name: Check types
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: yarn
+      - run: yarn type-check
