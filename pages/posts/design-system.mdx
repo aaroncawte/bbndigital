@@ -1,0 +1,42 @@
+import PostLayout from "../../components/PostLayout";
+import Callout from "../../components/Callout";
+
+export const meta = {
+  title: "Design System",
+  description: "Building blocks for content on bbn.digital",
+  noIndex: true,
+};
+
+# Heading 1
+
+Copy to space the headings
+
+## Heading 2
+
+Copy to space the headings
+
+### Heading 3
+
+Copy to space the headings
+
+#### Heading 4
+
+Copy to space the headings
+
+##### Heading 5
+
+Copy to space the headings
+
+###### Heading 6
+
+Copy to space the headings
+
+<Callout variant="offBlack">Use offBlack for quotations</Callout>
+<Callout variant="pink">Use pink for recommendations</Callout>
+<Callout variant="purple">Use purple for further reading</Callout>
+<Callout variant="blue">Use blue for actions or checklists</Callout>
+<Callout variant="yellow">Use yellow for ideas</Callout>
+
+export default ({ children }) => (
+  <PostLayout meta={meta}>{children}</PostLayout>
+);
