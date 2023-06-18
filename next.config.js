@@ -33,6 +33,13 @@ const withMDX = require("@next/mdx")({
     remarkPlugins: [],
     rehypePlugins: [],
   },
+  // Don't check ESLint and Typescript in builds as these are covered by CI tasks
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
 });
 
 module.exports = withMDX({
