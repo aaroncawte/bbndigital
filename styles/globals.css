@@ -43,6 +43,7 @@
   --tints-pink: hsl(340deg, 82%, 20%);
   --wash-offBlack: hsl(0deg 0% 95%);
   --wash-purple: hsl(280deg 100% 95%);
+  --wash-pink: hsl(340deg 82% 97%);
 }
 
 html,
@@ -164,4 +165,11 @@ button[type="submit"]:active, input[type="submit"]:active {
 button[type="submit"]:hover, input[type="submit"]:hover, button[type="submit"]:focus-within, input[type="submit"]:focus-within {
   filter: brightness(95%);
   border-color: var(--tints-pink);
+}
+
+button[type="submit"]:disabled, input[type="submit"]:disabled {
+  cursor: not-allowed;
+  background-color: var(--wash-pink);
+  border-color: var(--wash-pink);
+  color: var(--tints-pink);
 }
