@@ -4,6 +4,7 @@ import CustomHead from "../pages/_head";
 import Container from "./Container";
 import Date from "./Date";
 import Footer from "./Footer";
+import AuthorCard from "./AuthorCard";
 import EmailForm from "./EmailForm";
 
 export type PostMeta = {
@@ -37,6 +38,7 @@ const PostLayout = ({ meta, children }: PostLayoutProps) => (
           )}
           <>{children}</>
         </article>
+        <AuthorCard />
         <EmailForm />
         <Link href="/">Back to homepage</Link>
       </Container>
