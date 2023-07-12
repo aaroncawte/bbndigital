@@ -19,8 +19,8 @@ const AuthorCard = () => {
       <StyledBioContainer>
         <h2>Aaron Cawte</h2>
         <p>
-          Aaron is a Senior Front-end Developer at Octopus Energy. Say hello
-          using{" "}
+          Aaron is a Senior Front-end Developer at Octopus Energy. Let him know
+          if you liked this post using{" "}
           <SimplerStyled
             href="https://twitter.com/aaroncawte/"
             target="_blank"
@@ -28,7 +28,7 @@ const AuthorCard = () => {
           >
             @aaroncawte
           </SimplerStyled>{" "}
-          or by email using{" "}
+          or by email on{" "}
           <SimplerStyled
             href="mailto:aaron@bbn.digital"
             target="_blank"
@@ -36,6 +36,7 @@ const AuthorCard = () => {
           >
             aaron@bbn.digital
           </SimplerStyled>
+          .
         </p>
       </StyledBioContainer>
     </StyledAuthorCard>
