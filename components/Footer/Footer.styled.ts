@@ -17,5 +17,4 @@ export const FooterStyled = styled.footer`
 export const NameStyled = styled.span`
   font-size: 1.4rem;
   line-height: 3rem;
-  font-style: italic;
 `;
