@@ -29,6 +29,11 @@ export const CalloutStyled = styled.div<{ variant: CalloutVariants }>`
     border-color: ${theme.colors[variant]};
     background-color: ${theme.wash[variant]};
 
+    @media (prefers-color-scheme: dark) {
+      border-color: ${theme.colors[variant]};
+      background-color: ${theme.tints[variant]};
+    }
+
     a {
       text-decoration-color: ${theme.colors[variant]};
     }
