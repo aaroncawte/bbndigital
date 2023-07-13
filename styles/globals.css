@@ -54,6 +54,11 @@ body {
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 1.1rem;
   line-height: 2rem;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: var(--colors-offBlack);
+    color: var(--wash-pink);
+  }
 }
 
 h1,
@@ -64,6 +69,10 @@ h5,
 h6 {
   color: var(--colors-offBlack);
   font-weight: 600;
+
+  @media (prefers-color-scheme: dark) {
+    color: var(--wash-offBlack);
+  }
 }
 
 h1,
@@ -147,6 +156,10 @@ input {
 input[type="email"]:hover, input[type="email"]:focus-within {
   filter: brightness(95%);
   border-color: var(--colors-offBlack);
+
+  @media (prefers-color-scheme: dark) {
+    border-color: var(--colors-pink);
+  }
 }
 
 button[type="submit"], input[type="submit"] {
@@ -165,6 +178,10 @@ button[type="submit"]:active, input[type="submit"]:active {
 button[type="submit"]:hover, input[type="submit"]:hover, button[type="submit"]:focus-within, input[type="submit"]:focus-within {
   filter: brightness(95%);
   border-color: var(--tints-pink);
+
+  @media (prefers-color-scheme: dark) {
+    border-color: var(--wash-pink);
+  }
 }
 
 button[type="submit"]:disabled, input[type="submit"]:disabled {
