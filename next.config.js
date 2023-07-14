@@ -25,6 +25,10 @@ const securityHeaders = [
     key: "Content-Security-Policy",
     value: ContentSecurityPolicy.replace(/\s{2,}/g, " ").trim(),
   },
+  {
+    key: "Permissions-Policy",
+    value: "camera=(), geolocation=(), microphone=(), battery=self",
+  },
 ];
 
 const withMDX = require("@next/mdx")({
