@@ -67,7 +67,7 @@ const CustomHead = ({
           <meta property="og:url" content="https://bbn.digital" />
           <meta property="og:description" content={description} />
           <meta property="og:type" content="website" />
-          <meta property="og:image" content={ogImage} />
+          <meta property="og:image" content={`https://bbn.digital${ogImage}`} />
           <meta property="og:locale" content="en_GB" />
 
           {/* Twitter Cards */}
@@ -76,7 +76,10 @@ const CustomHead = ({
           <meta name="twitter:creator" content="@aaroncawte" />
           <meta name="twitter:title" content={`${title} - bbn.digital`} />
           <meta name="twitter:description" content={description} />
-          <meta name="twitter:image" content={ogImage} />
+          <meta
+            name="twitter:image"
+            content={`https://bbn.digital${ogImage}`}
+          />
         </>
       )}
       <title>{`${title} - bbn.digital`}</title>
