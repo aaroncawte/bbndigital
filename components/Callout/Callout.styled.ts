@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import Image from "next/image";
 
 export enum CalloutVariants {
   OFFBLACK = "offBlack",
@@ -46,7 +47,7 @@ export const CalloutStyled = styled.div<{ variant: CalloutVariants }>`
   `};
 `;
 
-export const CalloutIcon = styled.img`
+export const CalloutIcon = styled(Image)`
   position: absolute;
   left: calc(50% - 0.8rem);
   top: -2rem;
