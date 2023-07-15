@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { useRouter } from "next/router";
 import { useTheme } from "styled-components";
 
 type HeadProps = {
@@ -15,6 +16,7 @@ const CustomHead = ({
   noIndex = false,
 }: HeadProps) => {
   const theme = useTheme();
+  const router = useRouter();
   return (
     <Head>
       <meta charSet="utf-8" />
@@ -64,7 +66,10 @@ const CustomHead = ({
           {/* Open Graph */}
           <meta property="og:title" content={`${title} - bbn.digital`} />
           <meta property="og:site_name" content="bbn.digital" />
-          <meta property="og:url" content="https://bbn.digital" />
+          <meta
+            property="og:url"
+            content={`https://bbn.digital${router.pathname}`}
+          />
           <meta property="og:description" content={description} />
           <meta property="og:type" content="website" />
           <meta property="og:image" content={`https://bbn.digital${ogImage}`} />
