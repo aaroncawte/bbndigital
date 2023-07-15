@@ -23,7 +23,7 @@ export default async function generateRssFeed() {
     feed.item({
       title: post.title,
       description: post.description,
-      url: `${SITE_URL}/${post.slug}`,
+      url: `${SITE_URL}/posts/${post.slug}`,
       date: post.publishedAt,
     });
   });
