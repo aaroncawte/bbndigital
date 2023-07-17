@@ -13,7 +13,7 @@ export const CalloutStyled = styled.div<{ variant: CalloutVariants }>`
   position: relative;
   display: block;
   width: 100%;
-  padding: 0.8rem 1.6rem 0.8rem;
+  padding: 0 1.2rem 0.8rem;
   margin: 2.4rem 0;
   box-sizing: border-box;
   border-width: 0;
@@ -22,6 +22,7 @@ export const CalloutStyled = styled.div<{ variant: CalloutVariants }>`
   border-radius: 0.4rem;
 
   @media (min-width: 48rem) {
+    padding: 0.8rem 1.6rem 0.8rem;
     border-top-width: 0;
     border-left-width: 2.4rem;
   }
