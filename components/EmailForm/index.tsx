@@ -1,7 +1,11 @@
 import { useState } from "react";
 import Callout from "../Callout";
 import { CalloutVariants } from "../Callout/Callout.styled";
-import { StyledEmailForm, StyledOneLineForm } from "./EmailForm.styled";
+import {
+  StyledEmailForm,
+  StyledOneLineForm,
+  StyledHiddenLabel,
+} from "./EmailForm.styled";
 
 enum Statuses {
   INITIAL = "INITIAL",
@@ -57,7 +61,11 @@ const EmailForm = () => {
             <Callout variant={CalloutVariants.PINK}>{errorMessage}</Callout>
           )}
           <StyledOneLineForm>
+            <StyledHiddenLabel htmlFor="emailAddress">
+              Email address:{" "}
+            </StyledHiddenLabel>
             <input
+              id="emailAddress"
               type="email"
               placeholder="aaron@bbn.digital"
               onChange={handleInputChange}
