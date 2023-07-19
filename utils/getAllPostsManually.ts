@@ -6,7 +6,7 @@ import { meta as metaDesignSystem } from "../pages/posts/design-system.mdx";
 export function getAllPostsManually({ indexable = false }) {
   if (indexable) {
     return [metaContendingWithChaos, metaDesignSystem].filter(
-      (post) => !post.noIndex
+      (post) => !post.noIndex,
     );
   }
   return [metaContendingWithChaos, metaDesignSystem];
