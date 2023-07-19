@@ -27,7 +27,7 @@
     "typescript": "^5.0.4"
   },
   "devDependencies": {
-    "@krakentech/eslint-config": "^0.7.0",
+    "@krakentech/eslint-config": "^0.8.0",
     "@types/node": "20.4.2",
     "@types/react": "^18.2.6",
     "@types/styled-components": "^5.1.26",
