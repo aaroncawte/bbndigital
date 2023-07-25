@@ -7,6 +7,15 @@
     "aaroncawte"
   ],
   "schedule": [
-    "every tuesday"
+    "every wednesday"
+  ],
+  "packageRules": [
+    {
+      "matchUpdateTypes": [
+        "patch"
+      ],
+      "automerge": true,
+      "automergeStrategy": "merge-commit"
+    }
   ]
 }
