@@ -49,6 +49,12 @@ const CustomHead = ({
         href="/img/safari-pinned-tab.svg"
         color={theme.colors.pink}
       />
+      <link
+        rel="alternate"
+        type="application/rss+xml"
+        title="RSS"
+        href="/rss.xml"
+      ></link>
       <meta name="msapplication-TileColor" content={theme.colors.pink} />
       <meta name="theme-color" content={theme.colors.pink}></meta>
 
