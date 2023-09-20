@@ -6,9 +6,10 @@ import { MainStyled, SimplerStyled } from "../styles/Home.styled";
 import generateRssFeed from "../utils/generateRssFeed";
 import CustomHead from "./_head";
 
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import { meta as metaContendingWithChaos } from "./posts/contending-with-chaos.mdx";
+// @ts-ignore
+import { meta as metaCwcFunnel } from "./posts/cwc-funnel.mdx";
 
 export default function Home() {
   return (
@@ -68,6 +69,7 @@ export default function Home() {
 
           <p>Things I wanted to share with you.</p>
           <PostPreviewList>
+            <PostPreview slug="cwc-funnel" meta={metaCwcFunnel} />
             <PostPreview
               slug="contending-with-chaos"
               meta={metaContendingWithChaos}
