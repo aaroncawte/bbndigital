@@ -6,9 +6,10 @@ import { MainStyled, SimplerStyled } from "../styles/Home.styled";
 import generateRssFeed from "../utils/generateRssFeed";
 import CustomHead from "./_head";
 
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import { meta as metaContendingWithChaos } from "./posts/contending-with-chaos.mdx";
+// @ts-ignore
+import { meta as metaCwcFunnel } from "./posts/cwc-funnel.mdx";
 
 export default function Home() {
   return (
@@ -24,10 +25,10 @@ export default function Home() {
             </span>
           </p>
           <p>
-            I&apos;m Aaron. I make stuff on the Internet. I&apos;ve taken
-            photos, made videos, and dabbled in social, but mostly I design and
-            build websites. And most of the time, I do that for Octopus Energy.
-            Sign up and we can{" "}
+            I&apos;m Aaron (he/him). I make stuff on the Internet. I&apos;ve
+            taken photos, made videos, and dabbled in social, but primarily
+            I&apos;m the Global & UK Front-end Lead for Marketing at Octopus
+            Energy Group. Sign up and we can{" "}
             <SimplerStyled
               href="https://share.octopus.energy/denim-wind-445"
               target="_blank"
@@ -46,7 +47,15 @@ export default function Home() {
             >
               aaron@bbn.digital
             </SimplerStyled>
-            , or on the bird app using{" "}
+            , on{" "}
+            <SimplerStyled
+              href="https://www.linkedin.com/in/aaroncawte"
+              target="_blank"
+              rel="noreferrer"
+            >
+              the nerd app
+            </SimplerStyled>
+            , or the bird app using{" "}
             <SimplerStyled
               href="https://twitter.com/aaroncawte"
               target="_blank"
@@ -60,6 +69,7 @@ export default function Home() {
 
           <p>Things I wanted to share with you.</p>
           <PostPreviewList>
+            <PostPreview slug="cwc-funnel" meta={metaCwcFunnel} />
             <PostPreview
               slug="contending-with-chaos"
               meta={metaContendingWithChaos}
