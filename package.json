@@ -15,8 +15,8 @@
   },
   "dependencies": {
     "@mailchimp/mailchimp_marketing": "^3.0.80",
-    "@mdx-js/loader": "^2.2.1",
-    "@mdx-js/react": "^2.2.1",
+    "@mdx-js/loader": "^3.0.0",
+    "@mdx-js/react": "^3.0.0",
     "@next/mdx": "^14.0.0",
     "@vercel/analytics": "^1.0.1",
     "date-fns": "2.30.0",
