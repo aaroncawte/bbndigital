@@ -27,8 +27,8 @@ export default function Home() {
           <p>
             I&apos;m Aaron (he/him). I make stuff on the Internet. I&apos;ve
             taken photos, made videos, and dabbled in social, but primarily
-            I&apos;m the Global & UK Front-end Lead for Marketing at Octopus
-            Energy Group. Sign up and we can{" "}
+            I&apos;m a Senior Software Engineer at Octopus Energy Group, where I
+            run a global engineering team for marketing. Sign up and we can{" "}
             <SimplerStyled
               href="https://share.octopus.energy/denim-wind-445"
               target="_blank"
@@ -57,7 +57,7 @@ export default function Home() {
             </SimplerStyled>
             , or the bird app using{" "}
             <SimplerStyled
-              href="https://twitter.com/aaroncawte"
+              href="https://x.com/aaroncawte"
               target="_blank"
               rel="noreferrer"
             >
