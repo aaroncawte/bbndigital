@@ -57,7 +57,7 @@ export default function Home() {
             </SimplerStyled>
             , or the bird app using{" "}
             <SimplerStyled
-              href="https://twitter.com/aaroncawte"
+              href="https://x.com/aaroncawte"
               target="_blank"
               rel="noreferrer"
             >

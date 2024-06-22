@@ -22,7 +22,7 @@ const AuthorCard = () => {
           Aaron is a Senior Software Engineer at Octopus Energy Group. Let him
           know if you liked this post using{" "}
           <SimplerStyled
-            href="https://twitter.com/aaroncawte/"
+            href="https://x.com/aaroncawte/"
             target="_blank"
             rel="noopener"
           >
