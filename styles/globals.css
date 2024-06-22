@@ -1,5 +1,6 @@
 @font-face {
   font-family: "Staatliches";
+  font-display: swap;
   src: url("../public/fonts/Staatliches/Staatliches-Regular.woff2")
       format("woff2"),
     url("../public/fonts/Staatliches/Staatliches-Regular.woff") format("woff");
