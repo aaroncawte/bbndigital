@@ -19,7 +19,7 @@ const AuthorCard = () => {
       <StyledBioContainer>
         <h2>Aaron Cawte</h2>
         <p>
-          Aaron is a Senior Software Engineer at Octopus Energy Group. Let him
+          Aaron is a Lead Software Engineer at Octopus Energy Group. Let him
           know if you liked this post using{" "}
           <SimplerStyled
             href="https://x.com/aaroncawte/"
