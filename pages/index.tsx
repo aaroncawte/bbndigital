@@ -27,7 +27,7 @@ export default function Home() {
           <p>
             I&apos;m Aaron (he/him). I make stuff on the Internet. I&apos;ve
             taken photos, made videos, and dabbled in social, but primarily
-            I&apos;m a Senior Software Engineer at Octopus Energy Group, where I
+            I&apos;m a Lead Software Engineer at Octopus Energy Group, where I
             run a global engineering team for marketing. Sign up and we can{" "}
             <SimplerStyled
               href="https://share.octopus.energy/denim-wind-445"
