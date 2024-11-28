@@ -47,23 +47,32 @@ export default function Home() {
             >
               aaron@bbn.digital
             </SimplerStyled>
-            , on{" "}
+            , or{" "}
             <SimplerStyled
               href="https://www.linkedin.com/in/aaroncawte"
               target="_blank"
               rel="noreferrer"
             >
-              the nerd app
+              LinkedIn
             </SimplerStyled>
-            , or the bird app using{" "}
+            .<br />
+            I&apos;m also on <span role="img">🦋 </span>{" "}
+            <SimplerStyled
+              href="https://bsky.app/profile/aaronis.online"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Bluesky
+            </SimplerStyled>
+            , as well as{" "}
             <SimplerStyled
               href="https://x.com/aaroncawte"
               target="_blank"
               rel="noreferrer"
             >
-              @aaroncawte
-            </SimplerStyled>
-            .
+              X
+            </SimplerStyled>{" "}
+            (for now).
           </p>
           <h2>Posts</h2>
 
