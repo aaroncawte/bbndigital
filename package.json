@@ -31,7 +31,7 @@
   },
   "devDependencies": {
     "@krakentech/eslint-config": "^0.8.0",
-    "@types/node": "22.10.3",
+    "@types/node": "22.10.5",
     "@types/react": "^18.2.6",
     "@typescript-eslint/parser": "^8.0.0",
     "eslint": "8.57.1",
