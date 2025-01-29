@@ -1,13 +1,13 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base"
+    "config:recommended"
   ],
   "reviewers": [
     "aaroncawte"
   ],
   "schedule": [
-    "every wednesday"
+    "on wednesday"
   ],
   "packageRules": [
     {
@@ -18,7 +18,7 @@
       "automergeStrategy": "merge-commit"
     },
     {
-      "packageNames": [
+      "matchPackageNames": [
         "@typescript-eslint/parser"
       ],
       "matchUpdateTypes": [
