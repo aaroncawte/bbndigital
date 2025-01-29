@@ -21,7 +21,7 @@
       "packageNames": [
         "@typescript-eslint/parser"
       ],
-      "upgradeTypes": [
+      "matchUpdateTypes": [
         "minor"
       ],
       "automerge": true,
