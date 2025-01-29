@@ -16,6 +16,16 @@
       ],
       "automerge": true,
       "automergeStrategy": "merge-commit"
+    },
+    {
+      "packageNames": [
+        "@typescript-eslint/parser"
+      ],
+      "upgradeTypes": [
+        "minor"
+      ],
+      "automerge": true,
+      "automergeStrategy": "merge-commit"
     }
   ]
 }
