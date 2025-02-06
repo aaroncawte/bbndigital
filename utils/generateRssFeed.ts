@@ -1,5 +1,6 @@
 import fs from "fs";
 import RSS from "rss";
+
 import { getAllPostsManually } from "./getAllPostsManually";
 
 const SITE_URL = "https://bbn.digital/";

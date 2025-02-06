@@ -1,12 +1,13 @@
 import Image from "next/image";
+
 import { SimplerStyled } from "../../styles/Home.styled";
+import authorImage from "./aaron.jpg";
 import {
   StyledAuthorCard,
-  StyledImageContainer,
-  StyledImage,
   StyledBioContainer,
+  StyledImage,
+  StyledImageContainer,
 } from "./AuthorCard.styled";
-import authorImage from "./aaron.jpg";
 
 const AuthorCard = () => {
   return (

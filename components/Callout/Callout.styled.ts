@@ -1,5 +1,5 @@
-import styled, { css } from "styled-components";
 import Image from "next/image";
+import styled, { css } from "styled-components";
 
 export enum CalloutVariants {
   OFFBLACK = "offBlack",
