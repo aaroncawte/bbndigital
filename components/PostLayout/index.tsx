@@ -1,11 +1,12 @@
-import { ReactNode } from "react";
 import Link from "next/link";
+import { type ReactNode } from "react";
+
 import CustomHead from "../../pages/_head";
+import AuthorCard from "../AuthorCard";
 import Container from "../Container";
 import Date from "../Date";
-import Footer from "../Footer";
-import AuthorCard from "../AuthorCard";
 import EmailForm from "../EmailForm";
+import Footer from "../Footer";
 import { StyledSubheading } from "./PostLayout.styled";
 
 export type PostMeta = {

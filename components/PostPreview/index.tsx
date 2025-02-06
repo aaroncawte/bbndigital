@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { PostMeta } from "../PostLayout";
+
+import { type PostMeta } from "../PostLayout";
 import { StyledPostPreview } from "./PostPreview.styled";
 
 type PostPreviewProps = {

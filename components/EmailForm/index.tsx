@@ -1,10 +1,11 @@
 import { useState } from "react";
+
 import Callout from "../Callout";
 import { CalloutVariants } from "../Callout/Callout.styled";
 import {
   StyledEmailForm,
-  StyledOneLineForm,
   StyledHiddenLabel,
+  StyledOneLineForm,
 } from "./EmailForm.styled";
 
 enum Statuses {
