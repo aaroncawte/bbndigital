@@ -5,9 +5,9 @@ import PostPreviewList from "../components/PostPreviewList";
 import { MainStyled, SimplerStyled } from "../styles/Home.styled";
 import generateRssFeed from "../utils/generateRssFeed";
 import CustomHead from "./_head";
-// @ts-ignore
+// @ts-expect-error: mdx export issue
 import { meta as metaContendingWithChaos } from "./posts/contending-with-chaos.mdx";
-// @ts-ignore
+// @ts-expect-error: mdx export issue
 import { meta as metaCwcFunnel } from "./posts/cwc-funnel.mdx";
 
 export default function Home() {
