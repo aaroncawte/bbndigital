@@ -1,8 +1,8 @@
-// @ts-ignore
+// @ts-expect-error: mdx export issue
 import { meta as metaContendingWithChaos } from "../pages/posts/contending-with-chaos.mdx";
-// @ts-ignore
+// @ts-expect-error: mdx export issue
 import { meta as metaCwcFunnel } from "../pages/posts/cwc-funnel.mdx";
-// @ts-ignore
+// @ts-expect-error: mdx export issue
 import { meta as metaDesignSystem } from "../pages/posts/design-system.mdx";
 
 export function getAllPostsManually({ indexable = false }) {
