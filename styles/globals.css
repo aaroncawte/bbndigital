@@ -207,6 +207,10 @@ input {
   background: var(--wash-offBlack);
   border: 0.1rem solid var(--wash-offBlack);
   transition: 0.2s;
+
+  &::placeholder {
+    color: black;
+  }
 }
 
 input[type="email"]:hover, input[type="email"]:focus-within {
