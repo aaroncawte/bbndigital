@@ -70,6 +70,7 @@ const EmailForm = () => {
               placeholder="aaron@bbn.digital"
               onChange={handleInputChange}
               disabled={status === Statuses.PENDING}
+              autoComplete="email"
             ></input>
             <button
               type="submit"
