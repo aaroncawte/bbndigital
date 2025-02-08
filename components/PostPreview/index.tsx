@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import { type PostMeta } from "../PostLayout";
-import { StyledPostPreview } from "./PostPreview.styled";
+import { postPreviewStyles } from "./PostPreview.styles";
 
 type PostPreviewProps = {
   meta: PostMeta;
@@ -9,11 +9,11 @@ type PostPreviewProps = {
 };
 
 const PostPreview = ({ meta, slug }: PostPreviewProps) => (
-  <StyledPostPreview>
+  <li className={postPreviewStyles}>
     <Link href={`/posts/${slug}`}>{meta.title}</Link>
     <br />
     <small>{meta.description}</small>
-  </StyledPostPreview>
+  </li>
 );
 
 export default PostPreview;

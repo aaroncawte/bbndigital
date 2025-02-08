@@ -1,46 +1,52 @@
 import Image from "next/image";
 
-import { SimplerStyled } from "../../styles/Home.styled";
+import GradientA from "../GradientA";
 import authorImage from "./aaron.jpg";
 import {
-  StyledAuthorCard,
-  StyledBioContainer,
-  StyledImage,
-  StyledImageContainer,
-} from "./AuthorCard.styled";
+  authorCardStyles,
+  bioContainerStyles,
+  imageContainerStyles,
+  imageElementStyles,
+  imageStyles,
+} from "./AuthorCard.styles";
 
 const AuthorCard = () => {
   return (
-    <StyledAuthorCard>
-      <StyledImageContainer>
-        <StyledImage>
-          <Image src={authorImage} alt="Profile picture of the author" fill />
-        </StyledImage>
-      </StyledImageContainer>
-      <StyledBioContainer>
+    <section className={authorCardStyles}>
+      <div className={imageContainerStyles}>
+        <div className={imageStyles}>
+          <Image
+            src={authorImage}
+            alt="Profile picture of the author"
+            fill
+            className={imageElementStyles}
+          />
+        </div>
+      </div>
+      <div className={bioContainerStyles}>
         <h2>Aaron Cawte</h2>
         <p>
           Aaron is a Lead Software Engineer at Octopus Energy Group. Let him
           know if you liked this post using{" "}
-          <SimplerStyled
+          <GradientA
             href="https://x.com/aaroncawte/"
             target="_blank"
             rel="noopener"
           >
             @aaroncawte
-          </SimplerStyled>{" "}
+          </GradientA>{" "}
           or by email on{" "}
-          <SimplerStyled
+          <GradientA
             href="mailto:aaron@bbn.digital"
             target="_blank"
             rel="noopener"
           >
             aaron@bbn.digital
-          </SimplerStyled>
+          </GradientA>
           .
         </p>
-      </StyledBioContainer>
-    </StyledAuthorCard>
+      </div>
+    </section>
   );
 };
 

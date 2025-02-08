@@ -1,5 +1,6 @@
 import { defineConfig } from "@pandacss/dev";
-import { colors, breakpoints } from "./styles/theme_panda";
+
+import { breakpoints, colors } from "./styles/theme";
 
 export default defineConfig({
   // Whether to use css reset

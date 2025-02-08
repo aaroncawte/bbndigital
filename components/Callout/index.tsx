@@ -1,6 +1,11 @@
+import Image from "next/image";
 import { type ReactNode } from "react";
 
-import { CalloutIcon, CalloutStyled, CalloutVariants } from "./Callout.styled";
+import {
+  calloutIconStyles,
+  calloutStyles,
+  CalloutVariants,
+} from "./Callout.styles";
 
 type CalloutProps = {
   children: ReactNode;
@@ -31,15 +36,17 @@ const defaultIcon = {
 };
 
 const Callout = ({ children, variant }: CalloutProps) => (
-  <CalloutStyled variant={variant}>
-    <CalloutIcon
+  // @ts-expect-error: Something about the variant typing isn't right
+  <div className={calloutStyles({ variant: variant })}>
+    <Image
+      className={calloutIconStyles}
       width={24}
       height={24}
       src={`/img/material-icons/${defaultIcon[variant].src}_FILL1_wght400_GRAD0_opsz20.svg`}
       alt={defaultIcon[variant].alt}
     />
     {children}
-  </CalloutStyled>
+  </div>
 );
 
 export default Callout;
