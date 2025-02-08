@@ -15,7 +15,14 @@ export default async function handler(
     res.status(405).setHeader("Allow", "POST").end("Method Not Allowed");
   } else {
     const { email_address } = JSON.parse(req.body);
-    const audienceId = process.env.MAILCHIMP_AUDIENCE_ID;
+    const audienceId = process.env.MAILCHIMP_AUDIENCE_ID || "";
+
+    if (!audienceId.length) {
+      res
+        .status(500)
+        .json({ success: false, error: "Mailchimp audience ID not set" });
+    }
+
     if (!email_address) {
       // Error if no email address is provided, meaning that we cannot sign it up
       res
