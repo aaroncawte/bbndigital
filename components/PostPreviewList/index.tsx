@@ -1,7 +1,7 @@
-import { PostPreviewListStyled } from "./PostPreviewList.styled";
+import { postPreviewListStyles } from "./PostPreviewList.styles";
 
 const PostPreviewList = ({ children }: { children?: JSX.Element[] }) => (
-  <PostPreviewListStyled>{children}</PostPreviewListStyled>
+  <ul className={postPreviewListStyles}>{children}</ul>
 );
 
 export default PostPreviewList;

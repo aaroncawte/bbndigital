@@ -1,11 +1,11 @@
 import { useState } from "react";
 import Callout from "../Callout";
-import { CalloutVariants } from "../Callout/Callout.styled";
+import { CalloutVariants } from "../Callout/Callout.styles";
 import {
-  StyledEmailForm,
-  StyledOneLineForm,
-  StyledHiddenLabel,
-} from "./EmailForm.styled";
+  emailFormStyles,
+  onelineFormStyles,
+  hiddenLabelStyles,
+} from "./EmailForm.styles";
 
 enum Statuses {
   INITIAL = "INITIAL",
@@ -45,7 +45,7 @@ const EmailForm = () => {
   };
 
   return (
-    <StyledEmailForm onSubmit={handleSubmit}>
+    <section className={emailFormStyles} onSubmit={handleSubmit}>
       <h2>Before you go...</h2>
       <p>
         Wondering when my next post is coming? Me too, to be honest. Pop in your
@@ -60,10 +60,10 @@ const EmailForm = () => {
           {status == Statuses.FAIL && (
             <Callout variant={CalloutVariants.PINK}>{errorMessage}</Callout>
           )}
-          <StyledOneLineForm>
-            <StyledHiddenLabel htmlFor="emailAddress">
+          <form className={onelineFormStyles}>
+            <label className={hiddenLabelStyles} htmlFor="emailAddress">
               Email address:{" "}
-            </StyledHiddenLabel>
+            </label>
             <input
               id="emailAddress"
               type="email"
@@ -78,10 +78,10 @@ const EmailForm = () => {
             >
               Let me know
             </button>
-          </StyledOneLineForm>
+          </form>
         </>
       )}
-    </StyledEmailForm>
+    </section>
   );
 };
 

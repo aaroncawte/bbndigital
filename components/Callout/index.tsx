@@ -1,5 +1,10 @@
 import { ReactNode } from "react";
-import { CalloutStyled, CalloutVariants, CalloutIcon } from "./Callout.styled";
+import Image from "next/image";
+import {
+  CalloutVariants,
+  calloutStyles,
+  calloutIconStyles,
+} from "./Callout.styles";
 
 type CalloutProps = {
   children: ReactNode;
@@ -30,15 +35,17 @@ const defaultIcon = {
 };
 
 const Callout = ({ children, variant }: CalloutProps) => (
-  <CalloutStyled variant={variant}>
-    <CalloutIcon
+  // @ts-expect-error: Cursed reduce function
+  <div className={calloutStyles({ variant: variant })}>
+    <Image
+      className={calloutIconStyles}
       width={24}
       height={24}
       src={`/img/material-icons/${defaultIcon[variant].src}_FILL1_wght400_GRAD0_opsz20.svg`}
       alt={defaultIcon[variant].alt}
     />
     {children}
-  </CalloutStyled>
+  </div>
 );
 
 export default Callout;
