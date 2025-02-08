@@ -1,11 +1,15 @@
 import mailchimp from "@mailchimp/mailchimp_marketing";
+import { type NextApiRequest, type NextApiResponse } from "next";
 
 mailchimp.setConfig({
   accessToken: process.env.MAILCHIMP_ACCESS_TOKEN,
   server: process.env.MAILCHIMP_SERVER,
 });
 
-export default async function handler(req, res) {
+export default async function handler(
+  req: NextApiRequest,
+  res: NextApiResponse,
+) {
   if (req.method !== "POST") {
     // Error for all request types other than POST
     res.status(405).setHeader("Allow", "POST").end("Method Not Allowed");

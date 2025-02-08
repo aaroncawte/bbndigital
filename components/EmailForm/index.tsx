@@ -21,11 +21,11 @@ const EmailForm = () => {
 
   const isValid = emailAddress.length > 0;
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setEmailAddress(e.target.value);
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.ChangeEvent<HTMLInputElement>) => {
     e.preventDefault();
     setStatus(Statuses.PENDING);
 
