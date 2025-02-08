@@ -13,7 +13,8 @@
     "eslint:fix": "eslint . --fix",
     "type-check": "tsc",
     "format": "prettier --check '**/*.{css,json,js,jsx,md,mdx,ts,tsx}'",
-    "format:fix": "prettier --write '**/*.{css,json,js,jsx,md,mdx,ts,tsx}'"
+    "format:fix": "prettier --write '**/*.{css,json,js,jsx,md,mdx,ts,tsx}'",
+    "prepare": "panda codegen --clean"
   },
   "dependencies": {
     "@mailchimp/mailchimp_marketing": "^3.0.80",
@@ -33,6 +34,7 @@
   },
   "devDependencies": {
     "@krakentech/eslint-config": "1.0.0",
+    "@pandacss/dev": "^0.52.0",
     "@types/mailchimp__mailchimp_marketing": "^3.0.21",
     "@types/node": "22.13.9",
     "@types/react": "^18.2.6",

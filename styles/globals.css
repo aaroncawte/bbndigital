@@ -1,3 +1,5 @@
+@layer reset, base, tokens, recipes, utilities;
+
 @font-face {
   font-family: "Staatliches";
   font-display: swap;

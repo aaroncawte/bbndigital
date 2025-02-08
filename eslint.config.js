@@ -2,7 +2,7 @@ const linters = require("@krakentech/eslint-config");
 
 module.exports = linters.load(
   {
-    ignores: ["**/node_modules/**", "public/", ".next/"],
+    ignores: ["**/node_modules/**", "public/", ".next/", "styled-system/"],
   },
   {
     files: ["**/*.{js,jsx,cjs,mjs}"],
