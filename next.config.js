@@ -48,9 +48,6 @@ const withMDX = require("@next/mdx")({
 
 module.exports = withMDX({
   pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
-  compiler: {
-    styledComponents: true,
-  },
   async headers() {
     return process.env.NODE_ENV == "production"
       ? [
