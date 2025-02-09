@@ -1,6 +1,5 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
-import { useTheme } from "styled-components";
 
 type HeadProps = {
   title?: string;
@@ -9,13 +8,14 @@ type HeadProps = {
   noIndex?: boolean;
 };
 
+const THEME_COLOR = "#e8185f";
+
 const CustomHead = ({
   title = "Home",
   description = "Words and work from Aaron Cawte, a front-end developer and product designer based in London, UK.",
   ogImage = "/img/open-graph.png",
   noIndex = false,
 }: HeadProps) => {
-  const theme = useTheme();
   const router = useRouter();
   return (
     <Head>
@@ -47,7 +47,7 @@ const CustomHead = ({
       <link
         rel="mask-icon"
         href="/img/safari-pinned-tab.svg"
-        color={theme.colors.pink}
+        color={THEME_COLOR}
       />
       <link
         rel="alternate"
@@ -55,8 +55,8 @@ const CustomHead = ({
         title="RSS"
         href="/rss.xml"
       ></link>
-      <meta name="msapplication-TileColor" content={theme.colors.pink} />
-      <meta name="theme-color" content={theme.colors.pink}></meta>
+      <meta name="msapplication-TileColor" content={THEME_COLOR} />
+      <meta name="theme-color" content={THEME_COLOR}></meta>
 
       {noIndex ? (
         <meta name="robots" content="noindex" />
