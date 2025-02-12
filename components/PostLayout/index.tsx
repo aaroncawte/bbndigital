@@ -6,7 +6,7 @@ import Date from "../Date";
 import Footer from "../Footer";
 import AuthorCard from "../AuthorCard";
 import EmailForm from "../EmailForm";
-import { StyledSubheading } from "./PostLayout.styled";
+import { subheadingStyles } from "./PostLayout.styles";
 
 export type PostMeta = {
   title: string;
@@ -34,7 +34,7 @@ const PostLayout = ({ meta, children }: PostLayoutProps) => (
         <article>
           <h1>{meta.title}</h1>
           <br />
-          <StyledSubheading>{meta.description}</StyledSubheading>
+          <div className={subheadingStyles}>{meta.description}</div>
           Aaron Cawte
           {meta.publishedAt && (
             <span>

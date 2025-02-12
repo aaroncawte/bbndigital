@@ -11,7 +11,8 @@
     "start": "next start",
     "eslint": "eslint . --config=.eslintrc.js",
     "eslint:fix": "eslint . --config=.eslintrc.js --fix",
-    "type-check": "tsc"
+    "type-check": "tsc",
+    "prepare": "panda codegen --clean"
   },
   "dependencies": {
     "@mailchimp/mailchimp_marketing": "^3.0.80",
@@ -26,11 +27,11 @@
     "react-dom": "18.3.1",
     "react-is": "^18.2.0",
     "rss": "^1.2.2",
-    "styled-components": "6.1.15",
     "typescript": "^5.0.4"
   },
   "devDependencies": {
     "@krakentech/eslint-config": "^0.8.0",
+    "@pandacss/dev": "^0.52.0",
     "@types/mailchimp__mailchimp_marketing": "^3.0.21",
     "@types/node": "22.13.1",
     "@types/react": "^18.2.6",
