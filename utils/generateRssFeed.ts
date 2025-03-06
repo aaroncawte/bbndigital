@@ -1,5 +1,6 @@
 import fs from "fs";
 import RSS from "rss";
+
 import { getAllPostsManually } from "./getAllPostsManually";
 
 const SITE_URL = "https://bbn.digital/";
@@ -19,14 +20,16 @@ export default async function generateRssFeed() {
 
   const allPosts = getAllPostsManually({ indexable: true });
 
-  allPosts.map((post) => {
-    feed.item({
-      title: post.title,
-      description: post.description,
-      url: `${SITE_URL}posts/${post.slug}`,
-      date: post.publishedAt,
+  allPosts
+    .filter((post) => !!post.publishedAt)
+    .map((post) => {
+      feed.item({
+        title: post.title,
+        description: post.description,
+        url: `${SITE_URL}posts/${post.slug}`,
+        date: post.publishedAt as string,
+      });
     });
-  });
 
   fs.writeFileSync("./public/rss.xml", feed.xml({ indent: true }));
 }
