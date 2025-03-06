@@ -30,7 +30,7 @@
     "typescript": "^5.0.4"
   },
   "devDependencies": {
-    "@krakentech/eslint-config": "^0.8.0",
+    "@krakentech/eslint-config": "^1.0.0",
     "@types/mailchimp__mailchimp_marketing": "^3.0.21",
     "@types/node": "22.13.9",
     "@types/react": "^18.2.6",
