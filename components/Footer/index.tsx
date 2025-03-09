@@ -1,10 +1,10 @@
-import { FooterStyled, NameStyled } from "./Footer.styled";
+import { footerLogotypeStyles, footerStyles } from "./Footer.styles";
 
 const Footer = () => (
-  <FooterStyled>
-    <NameStyled>bbn.digital</NameStyled>
+  <footer className={footerStyles}>
+    <span className={footerLogotypeStyles}>bbn.digital</span>
     <span>Created by Aaron Cawte</span>
-  </FooterStyled>
+  </footer>
 );
 
 export default Footer;

@@ -44,3 +44,6 @@ yarn-error.log*
 
 # typescript
 tsconfig.tsbuildinfo
+## Panda
+styled-system
+styled-system-studio
