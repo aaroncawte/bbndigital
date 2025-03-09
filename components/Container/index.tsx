@@ -1,4 +1,5 @@
-import { ReactNode } from "react";
+import { type ReactNode } from "react";
+
 import { ContainerStyled } from "./Container.styled";
 
 type ContainerProps = {

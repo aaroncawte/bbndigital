@@ -39,7 +39,7 @@ export default async function handler(
           success: true,
           message: "Contact added to list successfully.",
         });
-      } catch (e) {
+      } catch (_e) {
         res.status(400).json({
           success: false,
           message:

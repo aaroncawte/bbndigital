@@ -1,5 +1,6 @@
-import { ReactNode } from "react";
-import { CalloutStyled, CalloutVariants, CalloutIcon } from "./Callout.styled";
+import { type ReactNode } from "react";
+
+import { CalloutIcon, CalloutStyled, CalloutVariants } from "./Callout.styled";
 
 type CalloutProps = {
   children: ReactNode;
