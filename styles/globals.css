@@ -1,8 +1,8 @@
 @font-face {
   font-family: "Staatliches";
   font-display: swap;
-  src: url("../public/fonts/Staatliches/Staatliches-Regular.woff2")
-      format("woff2"),
+  src:
+    url("../public/fonts/Staatliches/Staatliches-Regular.woff2") format("woff2"),
     url("../public/fonts/Staatliches/Staatliches-Regular.woff") format("woff");
 }
 
@@ -11,7 +11,8 @@
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: url("../public/fonts/OpenSans/OpenSans-Regular.woff2") format("woff2"),
+  src:
+    url("../public/fonts/OpenSans/OpenSans-Regular.woff2") format("woff2"),
     url("../public/fonts/OpenSans/OpenSans-Regular.woff") format("woff");
 }
 
@@ -20,7 +21,8 @@
   font-weight: 400;
   font-style: italic;
   font-display: swap;
-  src: url("../public/fonts/OpenSans/OpenSans-Italic.woff2") format("woff2"),
+  src:
+    url("../public/fonts/OpenSans/OpenSans-Italic.woff2") format("woff2"),
     url("../public/fonts/OpenSans/OpenSans-Italic.woff") format("woff");
 }
 
@@ -29,7 +31,8 @@
   font-weight: bold;
   font-style: normal;
   font-display: swap;
-  src: url("../public/fonts/OpenSans/OpenSans-Bold.woff2") format("woff2"),
+  src:
+    url("../public/fonts/OpenSans/OpenSans-Bold.woff2") format("woff2"),
     url("../public/fonts/OpenSans/OpenSans-Bold.woff") format("woff");
 }
 
@@ -38,7 +41,8 @@
   font-weight: bold;
   font-style: italic;
   font-display: swap;
-  src: url("../public/fonts/OpenSans/OpenSans-BoldItalic.woff2") format("woff2"),
+  src:
+    url("../public/fonts/OpenSans/OpenSans-BoldItalic.woff2") format("woff2"),
     url("../public/fonts/OpenSans/OpenSans-BoldItalic.woff") format("woff");
 }
 
@@ -55,22 +59,35 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family:
+    "Open Sans",
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    Fira Sans,
+    Droid Sans,
+    Helvetica Neue,
+    sans-serif;
   font-size: 1.1rem;
   line-height: 1.8rem;
 }
 
 @media (min-width: 48rem) {
-    html, body {
-      line-height: 2rem;
+  html,
+  body {
+    line-height: 2rem;
   }
 }
 
 @media (prefers-color-scheme: dark) {
-  html, body {
-  background-color: var(--colors-offBlack);
-  color: var(--wash-pink);
+  html,
+  body {
+    background-color: var(--colors-offBlack);
+    color: var(--wash-pink);
   }
 }
 
@@ -85,7 +102,12 @@ h6 {
 }
 
 @media (prefers-color-scheme: dark) {
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     color: var(--wash-offBlack);
   }
 }
@@ -93,8 +115,18 @@ h6 {
 h1,
 h2,
 h3 {
-  font-family: "Staatliches", -apple-system, BlinkMacSystemFont, Segoe UI,
-    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+  font-family:
+    "Staatliches",
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    Fira Sans,
+    Droid Sans,
+    Helvetica Neue,
     sans-serif;
   margin: 2rem 0 0;
 }
@@ -192,7 +224,8 @@ main {
   }
 }
 
-input, button {
+input,
+button {
   font-family: "Staatliches";
   height: 3.2rem;
   line-height: 3.2rem;
@@ -213,18 +246,21 @@ input {
   }
 }
 
-input[type="email"]:hover, input[type="email"]:focus-within {
+input[type="email"]:hover,
+input[type="email"]:focus-within {
   filter: brightness(95%);
   border-color: var(--colors-offBlack);
 }
 
 @media (prefers-color-scheme: dark) {
-  input[type="email"]:hover, input[type="email"]:focus-within {
+  input[type="email"]:hover,
+  input[type="email"]:focus-within {
     border-color: var(--colors-pink);
   }
 }
 
-button[type="submit"], input[type="submit"] {
+button[type="submit"],
+input[type="submit"] {
   line-height: 2.8rem;
   background-color: var(--colors-pink);
   border: 0.1rem solid var(--colors-pink);
@@ -233,22 +269,30 @@ button[type="submit"], input[type="submit"] {
   transition: 0.2s;
 }
 
-button[type="submit"]:active, input[type="submit"]:active {
- background-color: var(--tints-pink);
+button[type="submit"]:active,
+input[type="submit"]:active {
+  background-color: var(--tints-pink);
 }
 
-button[type="submit"]:hover, input[type="submit"]:hover, button[type="submit"]:focus-within, input[type="submit"]:focus-within {
+button[type="submit"]:hover,
+input[type="submit"]:hover,
+button[type="submit"]:focus-within,
+input[type="submit"]:focus-within {
   filter: brightness(95%);
   border-color: var(--tints-pink);
 }
 
 @media (prefers-color-scheme: dark) {
-  button[type="submit"]:hover, input[type="submit"]:hover, button[type="submit"]:focus-within, input[type="submit"]:focus-within {
+  button[type="submit"]:hover,
+  input[type="submit"]:hover,
+  button[type="submit"]:focus-within,
+  input[type="submit"]:focus-within {
     border-color: var(--wash-pink);
   }
 }
 
-button[type="submit"]:disabled, input[type="submit"]:disabled {
+button[type="submit"]:disabled,
+input[type="submit"]:disabled {
   cursor: not-allowed;
   background-color: var(--wash-pink);
   border-color: var(--wash-pink);
