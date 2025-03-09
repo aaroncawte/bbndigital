@@ -10,7 +10,7 @@
     "build": "next build",
     "start": "next start",
     "eslint": "eslint .",
-    "eslint:fix": "eslint . --config=.eslintrc.js --fix",
+    "eslint:fix": "eslint . --fix",
     "type-check": "tsc",
     "format": "prettier --check '**/*.{css,json,js,jsx,md,mdx,ts,tsx}'",
     "format:fix": "prettier --write '**/*.{css,json,js,jsx,md,mdx,ts,tsx}'"
