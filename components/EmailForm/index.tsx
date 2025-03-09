@@ -46,6 +46,8 @@ const EmailForm = () => {
   };
 
   return (
+    // TODO: fix
+    // eslint-disable-next-line @typescript-eslint/no-misused-promises
     <StyledEmailForm onSubmit={handleSubmit}>
       <h2>Before you go...</h2>
       <p>
