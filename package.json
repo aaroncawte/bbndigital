@@ -9,9 +9,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "eslint": "eslint . --config=.eslintrc.js",
+    "eslint": "eslint .",
     "eslint:fix": "eslint . --config=.eslintrc.js --fix",
-    "type-check": "tsc"
+    "type-check": "tsc",
+    "format": "prettier --check '**/*.{css,json,js,jsx,md,mdx,ts,tsx}'",
+    "format:fix": "prettier --write '**/*.{css,json,js,jsx,md,mdx,ts,tsx}'"
   },
   "dependencies": {
     "@mailchimp/mailchimp_marketing": "^3.0.80",
@@ -30,14 +32,15 @@
     "typescript": "^5.0.4"
   },
   "devDependencies": {
-    "@krakentech/eslint-config": "^0.8.0",
+    "@krakentech/eslint-config": "1.0.0",
     "@types/mailchimp__mailchimp_marketing": "^3.0.21",
     "@types/node": "22.13.9",
     "@types/react": "^18.2.6",
     "@types/rss": "^0.0.32",
     "@typescript-eslint/parser": "^8.0.0",
-    "eslint": "8.57.1",
+    "eslint": "9",
     "eslint-config-next": "^15.0.0",
+    "eslint-formatter-summary": "^1.1.0",
     "prettier": "3.5.3"
   }
 }

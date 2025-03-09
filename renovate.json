@@ -1,29 +1,17 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:recommended"
-  ],
-  "reviewers": [
-    "aaroncawte"
-  ],
-  "schedule": [
-    "on wednesday"
-  ],
+  "extends": ["config:recommended"],
+  "reviewers": ["aaroncawte"],
+  "schedule": ["on wednesday"],
   "packageRules": [
     {
-      "matchUpdateTypes": [
-        "patch"
-      ],
+      "matchUpdateTypes": ["patch"],
       "automerge": true,
       "automergeStrategy": "merge-commit"
     },
     {
-      "matchPackageNames": [
-        "@typescript-eslint/parser"
-      ],
-      "matchUpdateTypes": [
-        "minor"
-      ],
+      "matchPackageNames": ["@typescript-eslint/parser"],
+      "matchUpdateTypes": ["minor"],
       "automerge": true,
       "automergeStrategy": "merge-commit"
     }

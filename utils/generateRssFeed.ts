@@ -5,6 +5,8 @@ import { getAllPostsManually } from "./getAllPostsManually";
 
 const SITE_URL = "https://bbn.digital/";
 
+// TODO: fix
+// eslint-disable-next-line @typescript-eslint/require-await
 export default async function generateRssFeed() {
   const feedOptions = {
     title: "BBN.DIGITAL",
