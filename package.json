@@ -11,7 +11,9 @@
     "start": "next start",
     "eslint": "eslint .",
     "eslint:fix": "eslint . --config=.eslintrc.js --fix",
-    "type-check": "tsc"
+    "type-check": "tsc",
+    "format": "prettier --check '**/*.{css,json,js,jsx,md,mdx,ts,tsx}'",
+    "format:fix": "prettier --write '**/*.{css,json,js,jsx,md,mdx,ts,tsx}'"
   },
   "dependencies": {
     "@mailchimp/mailchimp_marketing": "^3.0.80",
