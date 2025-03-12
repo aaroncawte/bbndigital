@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@krakentech/eslint-config": "1.0.0",
-    "@pandacss/dev": "^0.52.0",
+    "@pandacss/dev": "^0.53.0",
     "@types/mailchimp__mailchimp_marketing": "^3.0.21",
     "@types/node": "22.13.10",
     "@types/react": "^18.2.6",
