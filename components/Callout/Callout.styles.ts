@@ -30,8 +30,8 @@ export const calloutStyles = cva({
     variant: {
       ...["offBlack", "pink", "purple", "blue", "yellow"].reduce(
         (acc, variant) =>
+          // @ts-expect-error: Cursed reduce function
           (
-            // @ts-expect-error: Cursed reduce function
             (acc[variant] = {
               borderColor: `${variant}.main`,
               backgroundColor: `${variant}.wash`,
