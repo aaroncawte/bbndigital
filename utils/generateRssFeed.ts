@@ -2,6 +2,7 @@ import fs from "fs";
 import RSS from "rss";
 
 import { getAllPostsManually } from "./getAllPostsManually";
+import { parseUKDate } from "./parseUkDate";
 
 const SITE_URL = "https://bbn.digital/";
 
@@ -14,22 +15,25 @@ export default async function generateRssFeed() {
     site_url: SITE_URL,
     feed_url: `${SITE_URL}rss.xml`,
     image_url: `${SITE_URL}img/apple-touch-icon.png`,
-    pubDate: new Date(),
+    pubDate: new Date().toLocaleString("en-GB", { timeZone: "Europe/London" }),
     copyright: `All rights reserved ${new Date().getFullYear()}, Aaron Cawte`,
   };
 
   const feed = new RSS(feedOptions);
 
   const allPosts = getAllPostsManually({ indexable: true });
-
   allPosts
     .filter((post) => !!post.publishedAt)
     .map((post) => {
+      const publishedDate =
+        typeof post.publishedAt === "string"
+          ? parseUKDate(post.publishedAt)
+          : "";
       feed.item({
         title: post.title,
         description: post.description,
         url: `${SITE_URL}posts/${post.slug}`,
-        date: post.publishedAt as string,
+        date: publishedDate,
       });
     });
 
