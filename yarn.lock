@@ -639,33 +639,33 @@
   resolved "https://registry.yarnpkg.com/@nolyfill/is-core-module/-/is-core-module-1.0.39.tgz#3dc35ba0f1e66b403c00b39344f870298ebb1c8e"
   integrity sha512-nn5ozdjYQpUCZlWGuxcJY/KpxkWQs4DcbMCmKojjyrYDEAGy4Ce19NN4v5MduafTwJlbKc99UA8YhSVqq9yPZA==
 
-"@pandacss/config@1.4.0", "@pandacss/config@^1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@pandacss/config/-/config-1.4.0.tgz#01817dadee2934361b4da0a4edda5e5fa9fe01e5"
-  integrity sha512-g/9t1V6k44rVqfQvsHBwB6D+GPUYRffHd1dnCh+OXIt/sYofmEwiVVoSmc1C0ohFimyNxMe2aPn7BctIRZWrqg==
+"@pandacss/config@1.4.1", "@pandacss/config@^1.4.1":
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/@pandacss/config/-/config-1.4.1.tgz#001133dadefe868afbb2347e814415378757b5d3"
+  integrity sha512-AyWP41ByPQb+3gx1iIt3CgsSdlrS6haNPjiGW0sAVOVSNlwbx88HyjlFcFglUJE3ycVJ154ZgtzROGdChvHaYw==
   dependencies:
-    "@pandacss/logger" "1.4.0"
-    "@pandacss/preset-base" "1.4.0"
-    "@pandacss/preset-panda" "1.4.0"
-    "@pandacss/shared" "1.4.0"
-    "@pandacss/types" "1.4.0"
+    "@pandacss/logger" "1.4.1"
+    "@pandacss/preset-base" "1.4.1"
+    "@pandacss/preset-panda" "1.4.1"
+    "@pandacss/shared" "1.4.1"
+    "@pandacss/types" "1.4.1"
     bundle-n-require "1.1.2"
     escalade "3.1.2"
     merge-anything "5.1.7"
     microdiff "1.3.2"
     typescript "5.8.3"
 
-"@pandacss/core@1.4.0", "@pandacss/core@^1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@pandacss/core/-/core-1.4.0.tgz#098370f1a5e7d8616df44590e5d62bf3eb068d0a"
-  integrity sha512-BTMFFwaTCOAOxt27OQZwBErECtr4wUc/ZSM8ANi0AWryGJGx0jb4xmKhAu5B85B2zpxt9BkyNs8QC6UOt6DWgA==
+"@pandacss/core@1.4.1", "@pandacss/core@^1.4.1":
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/@pandacss/core/-/core-1.4.1.tgz#6beda9e8dd4ae99487703efefa8afc2b276b452c"
+  integrity sha512-RVx5Ff+p3Sg7S6r9H0kcWei3JaQ86unEPcMT/7m5zIQeTWERiy9v3JQWmHkYBUA4nApC1naXyJgd2uzsf5KG0w==
   dependencies:
     "@csstools/postcss-cascade-layers" "5.0.2"
-    "@pandacss/is-valid-prop" "^1.4.0"
-    "@pandacss/logger" "1.4.0"
-    "@pandacss/shared" "1.4.0"
-    "@pandacss/token-dictionary" "1.4.0"
-    "@pandacss/types" "1.4.0"
+    "@pandacss/is-valid-prop" "^1.4.1"
+    "@pandacss/logger" "1.4.1"
+    "@pandacss/shared" "1.4.1"
+    "@pandacss/token-dictionary" "1.4.1"
+    "@pandacss/types" "1.4.1"
     browserslist "4.23.3"
     hookable "5.5.3"
     lightningcss "1.25.1"
@@ -682,74 +682,74 @@
     ts-pattern "5.8.0"
 
 "@pandacss/dev@^1.0.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@pandacss/dev/-/dev-1.4.0.tgz#9bfe09e7633b2bc325264b06d0e222ce40653ffb"
-  integrity sha512-/aS6WQHUjeoa1V+tW/bykZPqJ1jLIWz4gRgkRxCxpaS/ziSdYptZYVmcASsTWVtFamr8uEotB3hZejuLw6B9IA==
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/@pandacss/dev/-/dev-1.4.1.tgz#c9e744950980812ed07a9dbc7fa2235a37c81c18"
+  integrity sha512-FG2+UNDziLe3Vb4kerqnGcupgsOjz7uV9GB06wSf0J+TT4z6ysON4UmW4ZS5eqg5R9/7H4EJEvv91wX4CxHPAg==
   dependencies:
     "@clack/prompts" "0.9.1"
-    "@pandacss/config" "1.4.0"
-    "@pandacss/logger" "1.4.0"
-    "@pandacss/node" "1.4.0"
-    "@pandacss/postcss" "1.4.0"
-    "@pandacss/preset-panda" "1.4.0"
-    "@pandacss/shared" "1.4.0"
-    "@pandacss/token-dictionary" "1.4.0"
-    "@pandacss/types" "1.4.0"
+    "@pandacss/config" "1.4.1"
+    "@pandacss/logger" "1.4.1"
+    "@pandacss/node" "1.4.1"
+    "@pandacss/postcss" "1.4.1"
+    "@pandacss/preset-panda" "1.4.1"
+    "@pandacss/shared" "1.4.1"
+    "@pandacss/token-dictionary" "1.4.1"
+    "@pandacss/types" "1.4.1"
     cac "6.7.14"
 
-"@pandacss/extractor@1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@pandacss/extractor/-/extractor-1.4.0.tgz#e977522316c31a815088cd96e99e472e79744c92"
-  integrity sha512-4JBZMyAH9T1HJPtEUQyzZH2GNi/qqCHHUdr+yY0v1BegUJvQgDXp/TNBFZuiGrfxUbd5Up6MqsLwKL3//e+KMg==
+"@pandacss/extractor@1.4.1":
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/@pandacss/extractor/-/extractor-1.4.1.tgz#068b54454aee72fbb6e0a7b19d2bc31a11a242d1"
+  integrity sha512-sv75GQOBmvekKDAbcJRMxqAKsVcv62DYus5+0s3miOmRitZMoHKcvfcsfq8jicrVKow/L52pwkfrZWEDWoS7dw==
   dependencies:
-    "@pandacss/shared" "1.4.0"
+    "@pandacss/shared" "1.4.1"
     ts-evaluator "1.2.0"
     ts-morph "26.0.0"
 
-"@pandacss/generator@1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@pandacss/generator/-/generator-1.4.0.tgz#77b299a24a6358e7cb227200ac3f1dc3ffed68b9"
-  integrity sha512-HSZ3LRVTb35lgB6fBrkeU2hil8wTp/mkzQEn0cqiEzlS0dHbilGQrFYmZOjcPZWD/gK2YKcFBuwNISWFZkLiKQ==
+"@pandacss/generator@1.4.1":
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/@pandacss/generator/-/generator-1.4.1.tgz#27d0c6771a3be79c2dd7b1bd95eccb1169d6d018"
+  integrity sha512-DK+yVPiLlC9A27TysP4DekAZNzxKqO6UrqYtS/V3k46PoWFDv14e1s4OxiCMv3/rrmY5Szs/dP54oRb6Xz4EPQ==
   dependencies:
-    "@pandacss/core" "1.4.0"
-    "@pandacss/is-valid-prop" "^1.4.0"
-    "@pandacss/logger" "1.4.0"
-    "@pandacss/shared" "1.4.0"
-    "@pandacss/token-dictionary" "1.4.0"
-    "@pandacss/types" "1.4.0"
+    "@pandacss/core" "1.4.1"
+    "@pandacss/is-valid-prop" "^1.4.1"
+    "@pandacss/logger" "1.4.1"
+    "@pandacss/shared" "1.4.1"
+    "@pandacss/token-dictionary" "1.4.1"
+    "@pandacss/types" "1.4.1"
     javascript-stringify "2.1.0"
     outdent " ^0.8.0"
     pluralize "8.0.0"
     postcss "8.4.49"
     ts-pattern "5.8.0"
 
-"@pandacss/is-valid-prop@^1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@pandacss/is-valid-prop/-/is-valid-prop-1.4.0.tgz#d662a4391b28afe7bae2d074cbee1df805b4e00d"
-  integrity sha512-c3FX90/ogkhBEXcjkKdeICM+cg3w4gvJ9Urkoy+Ien+IJNCrPwjesX82k+ystY/teTzMF9B9g4sGAjkkRsd3ug==
+"@pandacss/is-valid-prop@^1.4.1":
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/@pandacss/is-valid-prop/-/is-valid-prop-1.4.1.tgz#7c765ed6be12d1d03a6f96f0f108d426bf825bb4"
+  integrity sha512-2M8AsL0fDx6tgkqRaN/4Gz2Owh7EluUWb5gmwC3zpStVQkNb4kY7BCVR/+Gg+kWB9QoFgyyeb5MfKSCLcGXwTQ==
 
-"@pandacss/logger@1.4.0", "@pandacss/logger@^1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@pandacss/logger/-/logger-1.4.0.tgz#752f894b77b555ff1b69eaea0b1a7b2c2f2b1c62"
-  integrity sha512-d3FZVyPGIk87uWCMegtiGZSHAI7IA4MC3nUFpkCzBPaJgZfkVSwJjBr8Qz/Hz3S219i66a3vy3UxyCgc7omiHg==
+"@pandacss/logger@1.4.1", "@pandacss/logger@^1.4.1":
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/@pandacss/logger/-/logger-1.4.1.tgz#834705cfd3d05bd09b51f275f96d0de4ac87fe44"
+  integrity sha512-X2mnaRU2zxTdOILrN/CcR3PPqnganlZjRPg43pg6wJ8/ccQd/sb2ualIo1X6E1vfFRi60XnzBfm7slqUFIBtuA==
   dependencies:
-    "@pandacss/types" "1.4.0"
+    "@pandacss/types" "1.4.1"
     kleur "4.1.5"
 
-"@pandacss/node@1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@pandacss/node/-/node-1.4.0.tgz#e03887ee7b8d9d42ff2bca663152442d47375f4b"
-  integrity sha512-67axJaUcGDzvCOL5OTbMzSqrxLgM4t3JJNnSFKLeseaCAXqx7G97cJxP/sCXVWXoE47J/O7Sd4xaCQMMu4D2zA==
+"@pandacss/node@1.4.1":
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/@pandacss/node/-/node-1.4.1.tgz#36843b13d74ad042be9e9f1bb0a607dcf00f1b79"
+  integrity sha512-61Cta/7E+pUiEzKDMg1te2q/05b903f+ASQqIO9ZU8fzNilt0BB19sbsrIPfQ5LjM/T/fGdfSMDmf1ws2ETmng==
   dependencies:
-    "@pandacss/config" "1.4.0"
-    "@pandacss/core" "1.4.0"
-    "@pandacss/generator" "1.4.0"
-    "@pandacss/logger" "1.4.0"
-    "@pandacss/parser" "1.4.0"
-    "@pandacss/reporter" "1.4.0"
-    "@pandacss/shared" "1.4.0"
-    "@pandacss/token-dictionary" "1.4.0"
-    "@pandacss/types" "1.4.0"
+    "@pandacss/config" "1.4.1"
+    "@pandacss/core" "1.4.1"
+    "@pandacss/generator" "1.4.1"
+    "@pandacss/logger" "1.4.1"
+    "@pandacss/parser" "1.4.1"
+    "@pandacss/reporter" "1.4.1"
+    "@pandacss/shared" "1.4.1"
+    "@pandacss/token-dictionary" "1.4.1"
+    "@pandacss/types" "1.4.1"
     browserslist "4.23.3"
     chokidar "4.0.3"
     fast-glob "3.3.3"
@@ -770,76 +770,76 @@
     ts-pattern "5.8.0"
     tsconfck "3.1.6"
 
-"@pandacss/parser@1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@pandacss/parser/-/parser-1.4.0.tgz#acd6b9c84bb9610bd1478d4a9834b74a5cd073b0"
-  integrity sha512-rEOaCI3cgoIs1vqTS8YH3L+Ex8WsW1deGmBo3Hl90mXDcqfkVJxBEAiTzFOCQAYpTUwX+lXzHiCGZQLPvBIFqQ==
+"@pandacss/parser@1.4.1":
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/@pandacss/parser/-/parser-1.4.1.tgz#b200d74f217c498f8689694e4fc909823f0a4f99"
+  integrity sha512-lWiekfQ/bBOVINLE02uiCcGEeRHpI4K6b2fKMIOokuHWsrLj96GGsFt4ViZlVAiF8bTkWefcIUnOTiboNIE+2A==
   dependencies:
-    "@pandacss/config" "^1.4.0"
-    "@pandacss/core" "^1.4.0"
-    "@pandacss/extractor" "1.4.0"
-    "@pandacss/logger" "1.4.0"
-    "@pandacss/shared" "1.4.0"
-    "@pandacss/types" "1.4.0"
+    "@pandacss/config" "^1.4.1"
+    "@pandacss/core" "^1.4.1"
+    "@pandacss/extractor" "1.4.1"
+    "@pandacss/logger" "1.4.1"
+    "@pandacss/shared" "1.4.1"
+    "@pandacss/types" "1.4.1"
     "@vue/compiler-sfc" "3.4.19"
     magic-string "0.30.17"
     ts-morph "26.0.0"
     ts-pattern "5.8.0"
 
-"@pandacss/postcss@1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@pandacss/postcss/-/postcss-1.4.0.tgz#7bc94d038725d0720e25962260222568e832b4bc"
-  integrity sha512-t8BhJeNNV5H5PhqGrA6eER5Yc+Ph45yxZZewZ1YaanuRAWJqBja63x+s4by8aAk6PCe9+czM04BKfafZ3dXZCQ==
+"@pandacss/postcss@1.4.1":
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/@pandacss/postcss/-/postcss-1.4.1.tgz#d12152c98eb7d33bc3a576aa66f557f3a1ec20e2"
+  integrity sha512-X7VK/z4jDJakW+Q50BsbRqt+ifx5XIKkh7SCW0Xh4TCKVqJHnK5LsqQbyN4FH+T0eHzJCD0jVs9dxDbq5gjM+A==
   dependencies:
-    "@pandacss/node" "1.4.0"
+    "@pandacss/node" "1.4.1"
     postcss "8.4.49"
 
-"@pandacss/preset-base@1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@pandacss/preset-base/-/preset-base-1.4.0.tgz#b9c2a11f999d33244dbb62e51a8e7fdd7a006604"
-  integrity sha512-3qo/HdDezCqa6eItZypYiSnm+Sr7SxQtYST4n0UvLYCo3+crvR4q4CwaQG7UNq48abeVIHbN9Ux8kBVP6jFSmA==
+"@pandacss/preset-base@1.4.1":
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/@pandacss/preset-base/-/preset-base-1.4.1.tgz#f01db91bef9145fc957992a383bffabd2f2e764c"
+  integrity sha512-j7ivzv7PJ70hDB+/fU9688vr4JplFNEN0jiCPOVJjV3DKRLhK/AMemGp5ofTTdFNh85l3hr7ZsXgnTllSMzCHg==
   dependencies:
-    "@pandacss/types" "1.4.0"
+    "@pandacss/types" "1.4.1"
 
-"@pandacss/preset-panda@1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@pandacss/preset-panda/-/preset-panda-1.4.0.tgz#19ca402658267032730794f9d8e3d7c06f2a85bb"
-  integrity sha512-ZumZ7mQBqjpne1GrhqSuIW8/9KY02xI4N8vtD1F8poorVG2JC97QF+5FRtUH8hir7f94xR08G33wTe8qefSP7A==
+"@pandacss/preset-panda@1.4.1":
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/@pandacss/preset-panda/-/preset-panda-1.4.1.tgz#bf246cccdd4f813af25cce48b3e5f4f90d7f366f"
+  integrity sha512-hjSWg2DjmVNF8dT2mauEoWgOUcDWHvHKVr56X69ozPfnzkOyvWCxce0IJHpW7atsiYZY/c7yjVPvE4yMolCfCg==
   dependencies:
-    "@pandacss/types" "1.4.0"
+    "@pandacss/types" "1.4.1"
 
-"@pandacss/reporter@1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@pandacss/reporter/-/reporter-1.4.0.tgz#2d4f4d357ad1149f415fad06658149be1ad2b44d"
-  integrity sha512-ofk6WVhG/nf8t4d7kE9lcLcI0gQDhG8Qedtf+tHncRkVPN9iRpwb2zCXbcg5qjB4q3k5mlTcA+2mj1fLssvnKA==
+"@pandacss/reporter@1.4.1":
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/@pandacss/reporter/-/reporter-1.4.1.tgz#cf63466775fc4f72e076e26947d19094198e59ae"
+  integrity sha512-PbFRh1sQ54bWlcWLMkJnKd0zc3JNVLRBk2OMQ2cc94slEi95aLpCYmfk3c0ti0ElibQxApvIqQ6HwFKOiv4zRA==
   dependencies:
-    "@pandacss/core" "1.4.0"
-    "@pandacss/generator" "1.4.0"
-    "@pandacss/logger" "1.4.0"
-    "@pandacss/shared" "1.4.0"
-    "@pandacss/types" "1.4.0"
+    "@pandacss/core" "1.4.1"
+    "@pandacss/generator" "1.4.1"
+    "@pandacss/logger" "1.4.1"
+    "@pandacss/shared" "1.4.1"
+    "@pandacss/types" "1.4.1"
     table "6.9.0"
     wordwrapjs "5.1.0"
 
-"@pandacss/shared@1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@pandacss/shared/-/shared-1.4.0.tgz#39c31c007031cc925b583a9005b09b003e529ea1"
-  integrity sha512-84XTuJbsjEvOTQty3MnAQsF0STG54Mwnwhx/pvbvKbXcisLAw/xjn5Z07zo7EBgqbyf3vZxK1+yeIWCwvHhj0g==
+"@pandacss/shared@1.4.1":
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/@pandacss/shared/-/shared-1.4.1.tgz#8325cc7eb2bab9a7db123b9a2bd0bc172b2c7b35"
+  integrity sha512-xEEFlOf8r06iPLFPsqH27HrS2L9pqr4SPNjEMhd1HFk1NGHKB9HPXlLFbObnEKLa9LQBv6XMp8rPypu5w48HDQ==
 
-"@pandacss/token-dictionary@1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@pandacss/token-dictionary/-/token-dictionary-1.4.0.tgz#83fa7f1f49256f00b500e2b325a951c303a023c4"
-  integrity sha512-9hTH1Y3SiXZN0LI5KmLMsT7AZjgvL+JcuOhNTCD5lKOe9Z1sbVDEbQFeg99vm/I99z385w9qOQXw8EfDLlLazQ==
+"@pandacss/token-dictionary@1.4.1":
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/@pandacss/token-dictionary/-/token-dictionary-1.4.1.tgz#db03956756df602e82acc37b12c77966bcc1a992"
+  integrity sha512-VGpRWi9pcQi6XIfK7Zyhp45vETi7oUrdp5UK+8TOq+R8jtI6VODo+NxQgkbwAyXj7XBeO7nY4+e/lrjsYo+zmQ==
   dependencies:
-    "@pandacss/logger" "^1.4.0"
-    "@pandacss/shared" "1.4.0"
-    "@pandacss/types" "1.4.0"
+    "@pandacss/logger" "^1.4.1"
+    "@pandacss/shared" "1.4.1"
+    "@pandacss/types" "1.4.1"
     ts-pattern "5.8.0"
 
-"@pandacss/types@1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@pandacss/types/-/types-1.4.0.tgz#963f9d1fff7b8fdf2237d1156f0a60452bf2ca57"
-  integrity sha512-lXN3GiPDSjBNXze9LUGEIHtbH8/e/xhb0i4BBDCQAjbt1+My0VHe4OTE1Bg/dD8X2oKAQIB0VsRl4Wf2DRDm7g==
+"@pandacss/types@1.4.1":
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/@pandacss/types/-/types-1.4.1.tgz#5e6698d40b5fb740a4e3ee8a7d9faceef9ed6a57"
+  integrity sha512-JsoFZQ0uc8Pq2ZSee9gbS7treyuKOxUQwtgdKq+1Vew3R2ZyCJ0vW61dT2LY4Lh6l46ICKn3uGDWnUjF8ourAA==
 
 "@pkgr/core@^0.1.0":
   version "0.1.1"
@@ -1523,9 +1523,9 @@ balanced-match@^1.0.0:
   integrity sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==
 
 baseline-browser-mapping@^2.8.3:
-  version "2.8.7"
-  resolved "https://registry.yarnpkg.com/baseline-browser-mapping/-/baseline-browser-mapping-2.8.7.tgz#4d3606fdb1738fd902da40c5fcc0595e87cec044"
-  integrity sha512-bxxN2M3a4d1CRoQC//IqsR5XrLh0IJ8TCv2x6Y9N0nckNz/rTjZB3//GGscZziZOxmjP55rzxg/ze7usFI9FqQ==
+  version "2.8.9"
+  resolved "https://registry.yarnpkg.com/baseline-browser-mapping/-/baseline-browser-mapping-2.8.9.tgz#fd0b8543c4f172595131e94965335536b3101b75"
+  integrity sha512-hY/u2lxLrbecMEWSB0IpGzGyDyeoMFQhCvZd2jGFSE5I17Fh01sYUBPCJtkWERw7zrac9+cIghxm/ytJa2X8iA==
 
 brace-expansion@^1.1.7:
   version "1.1.12"
@@ -1625,9 +1625,9 @@ caniuse-api@^3.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001646, caniuse-lite@^1.0.30001741:
-  version "1.0.30001745"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001745.tgz#ab2a36e3b6ed5bfb268adc002c476aab6513f859"
-  integrity sha512-ywt6i8FzvdgrrrGbr1jZVObnVv6adj+0if2/omv9cmR2oiZs30zL4DIyaptKcbOrBdOIc74QTMoJvSE2QHh5UQ==
+  version "1.0.30001746"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001746.tgz#199d20f04f5369825e00ff7067d45d5dfa03aee7"
+  integrity sha512-eA7Ys/DGw+pnkWWSE/id29f2IcPHVoE8wxtvE5JdvD2V28VTDPy1yEeo11Guz0sJ4ZeGRcm3uaTcAqK1LXaphA==
 
 caniuse-lite@^1.0.30001579:
   version "1.0.30001579"
@@ -1927,9 +1927,9 @@ dunder-proto@^1.0.0, dunder-proto@^1.0.1:
     gopd "^1.2.0"
 
 electron-to-chromium@^1.5.218, electron-to-chromium@^1.5.4:
-  version "1.5.224"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.224.tgz#dbc6827cb3d41d7293811d6d8af53114804e0ed1"
-  integrity sha512-kWAoUu/bwzvnhpdZSIc6KUyvkI1rbRXMT0Eq8pKReyOyaPZcctMli+EgvcN1PAvwVc7Tdo4Fxi2PsLNDU05mdg==
+  version "1.5.227"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.227.tgz#c81b6af045b0d6098faed261f0bd611dc282d3a7"
+  integrity sha512-ITxuoPfJu3lsNWUi2lBM2PaBPYgH3uqmxut5vmBxgYvyI4AlJ6P3Cai1O76mOrkJCBzq0IxWg/NtqOrpu/0gKA==
 
 emoji-regex@^8.0.0:
   version "8.0.0"
