@@ -1,3 +1,6 @@
+import Image from "next/image";
+import Link from "next/link";
+
 import Container from "../components/Container";
 import Footer from "../components/Footer";
 import GradientA from "../components/GradientA";
@@ -25,10 +28,15 @@ export default function Home() {
             </span>
           </p>
           <p>
-            I&apos;m Aaron (he/him). I make stuff on the Internet. I&apos;ve
-            taken photos, made videos, and dabbled in social, but primarily
-            I&apos;m a Lead Software Engineer at Octopus Energy Group, where I
-            run a global engineering team for marketing. Sign up and we can{" "}
+            I&apos;m Aaron <small>(he/him)</small>. I make stuff on the
+            Internet. I&apos;ve taken photos, made videos, and dabbled in
+            social, but primarily I&apos;m a Lead Software Engineer at Octopus
+            Energy.
+            <br />
+            <br />
+            At Octopus, I run the global tech team for marketing. We build
+            products to save customers money and forward the energy transition.
+            Sign up and we can{" "}
             <GradientA
               href="https://share.octopus.energy/denim-wind-445"
               target="_blank"
@@ -39,7 +47,15 @@ export default function Home() {
             .
           </p>
           <p>
-            I&apos;m always happy to talk shop, and you can reach me on{" "}
+            <GradientA
+              href="https://octopus.energy/blog/spotlight-aaron-lead-octopus-chaos-web-developer/"
+              target="_blank"
+            >
+              Spotlight on... Aaron, lead chaos engineer | Octopus Energy
+            </GradientA>
+          </p>
+          <p>
+            Want to talk shop? You can reach me on{" "}
             <GradientA
               href="mailto:aaron@bbn.digital"
               target="_blank"
@@ -64,18 +80,79 @@ export default function Home() {
             >
               Bluesky
             </GradientA>
-            , as well as{" "}
+            , and previously{" "}
             <GradientA
               href="https://x.com/aaroncawte"
               target="_blank"
               rel="noreferrer"
             >
               X
-            </GradientA>{" "}
-            (for now).
+            </GradientA>
+            .
           </p>
+          <h2>Speaking</h2>
+          <p>Places where I've appeared.</p>
+          <Image
+            src="/img/speaking/joyconf.jpeg"
+            alt="Aaron speaking at a conference"
+            width={600}
+            height={280}
+            style={{
+              objectFit: "cover",
+              objectPosition: "bottom",
+              maxWidth: "100%",
+            }}
+          />
+          <br />
+          <Link
+            href="https://joyconf.storyblok.com/2025/amsterdam#event-agenda-session-modal-1649babf-e24f-4aa0-a40c-439ae6ae0a6c"
+            target="_blank"
+          >
+            How to Start an Energy Revolution (And the Tools You'll Need)
+          </Link>
+          <br />
+          <small>JoyConf by Storyblok, Amsterdam, November 2025</small>
+          <br />
+          <br />
+          <Image
+            src="/img/speaking/dev-cloud-fireside.jpeg"
+            alt="Aaron speaking at a conference"
+            width={600}
+            height={280}
+            style={{
+              objectFit: "cover",
+              objectPosition: "right",
+              maxWidth: "100%",
+            }}
+          />
+          <br />
+          <Link
+            href="https://vercel.com/go/exploring-the-developer-cloud-fireside-chat-with-octopus-energy"
+            target="_blank"
+          >
+            Exploring the Developer Cloud with Octopus Energy
+          </Link>
+          <br />
+          <small>Fireside Chat, Vercel, London, May 2025</small>
+          <br />
+          <br />
+          <Image
+            src="/img/speaking/uk-cust-summit.jpeg"
+            alt="Aaron speaking at a conference"
+            width={600}
+            height={280}
+            style={{
+              objectFit: "cover",
+              objectPosition: "top",
+              maxWidth: "100%",
+            }}
+          />
+          <br />
+          Fixing Energy at a Global Scale
+          <br />
+          <small>Storyblok UK Customer Summit, London, June 2024</small>
+          <br />
           <h2>Posts</h2>
-
           <p>Things I wanted to share with you.</p>
           <PostPreviewList>
             <PostPreview slug="cwc-funnel" meta={metaCwcFunnel} />
