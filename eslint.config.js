@@ -18,4 +18,12 @@ module.exports = linters.load(
       "@typescript-eslint/no-unsafe-member-access": "off",
     },
   },
+  {
+    languageOptions: {
+      parserOptions: {
+        tsconfigRootDir: __dirname,
+        project: "./tsconfig.json",
+      },
+    },
+  },
 );
