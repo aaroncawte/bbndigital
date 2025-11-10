@@ -94,7 +94,7 @@ export default function Home() {
           <p>Places where I've appeared.</p>
           <Image
             src="/img/speaking/joyconf.jpeg"
-            alt="Aaron speaking at a conference"
+            alt="Aaron stood on a stage alongside Alex Brown, in front of a large screen showing user interface screenshots"
             width={600}
             height={280}
             style={{
@@ -116,7 +116,7 @@ export default function Home() {
           <br />
           <Image
             src="/img/speaking/dev-cloud-fireside.jpeg"
-            alt="Aaron speaking at a conference"
+            alt="Aaron seated on stage, in conversation with Matt Cleghorn of Vercel"
             width={600}
             height={280}
             style={{
@@ -138,7 +138,7 @@ export default function Home() {
           <br />
           <Image
             src="/img/speaking/uk-cust-summit.jpeg"
-            alt="Aaron speaking at a conference"
+            alt="Aaron addressing the room, backlit by large windows"
             width={600}
             height={280}
             style={{
@@ -152,6 +152,10 @@ export default function Home() {
           <br />
           <small>Storyblok UK Customer Summit, London, June 2024</small>
           <br />
+          <br />
+          <small>
+            <em>Images courtesy of Luka Bratos & Storyblok.</em>
+          </small>
           <h2>Posts</h2>
           <p>Things I wanted to share with you.</p>
           <PostPreviewList>
