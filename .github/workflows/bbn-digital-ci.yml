@@ -7,20 +7,20 @@ jobs:
     name: Lint with ESLint
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - run: yarn
       - run: yarn eslint
   format:
     name: Format with Prettier
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - run: yarn
       - run: yarn format
   type-check:
     name: Check types
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - run: yarn
       - run: yarn type-check
