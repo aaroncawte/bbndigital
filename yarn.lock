@@ -1187,7 +1187,7 @@
     "@typescript-eslint/types" "8.22.0"
     "@typescript-eslint/visitor-keys" "8.22.0"
 
-"@typescript-eslint/scope-manager@8.48.1":
+"@typescript-eslint/scope-manager@8.48.1", "@typescript-eslint/scope-manager@^8.46.1":
   version "8.48.1"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/scope-manager/-/scope-manager-8.48.1.tgz#8bc70643e7cca57864b1ff95dd350fc27756bec0"
   integrity sha512-rj4vWQsytQbLxC5Bf4XwZ0/CKd362DkWMUkviT7DCS057SK64D5lH74sSGzhI6PDD2HCEq02xAP9cX68dYyg1w==
@@ -1270,7 +1270,7 @@
     "@typescript-eslint/types" "8.22.0"
     "@typescript-eslint/typescript-estree" "8.22.0"
 
-"@typescript-eslint/utils@8.48.1":
+"@typescript-eslint/utils@8.48.1", "@typescript-eslint/utils@^8.46.1":
   version "8.48.1"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/utils/-/utils-8.48.1.tgz#6cf7b99e0943b33a983ef687b9a86b65578b5c32"
   integrity sha512-fAnhLrDjiVfey5wwFRwrweyRlCmdz5ZxXz2G/4cLn0YDLjTapmN4gcCsTBR1N2rWnZSDeWpYtgLDsJt+FpmcwA==
@@ -1399,14 +1399,17 @@
   integrity sha512-lrW200hZdbfRtztbygyaq/6jP6AKE8qQN2KvPcJ+x7wiD038YtnYtZ82IMNJ69GJibV7bwL3y9FgK+5w/pYt6g==
 
 "@vercel/analytics@^1.0.1":
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/@vercel/analytics/-/analytics-1.5.0.tgz#073f93694897414b21a8495e2619bbf64447dcaa"
-  integrity sha512-MYsBzfPki4gthY5HnYN7jgInhAZ7Ac1cYDoRWFomwGHWEX7odTEzbtg9kf/QSo7XEsEAqlQugA6gJ2WS2DEa3g==
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/@vercel/analytics/-/analytics-1.6.1.tgz#b4e16daf445cf6cd365a91e43d86e9e5b3428ddc"
+  integrity sha512-oH9He/bEM+6oKlv3chWuOOcp8Y6fo6/PSro8hEkgCW3pu9/OiCXiUpRUogDh3Fs3LH2sosDrx8CxeOLBEE+afg==
 
 "@vitest/eslint-plugin@^1.1.25":
-  version "1.1.25"
-  resolved "https://registry.yarnpkg.com/@vitest/eslint-plugin/-/eslint-plugin-1.1.25.tgz#0e2ed719844b52edc88a0467f11f80162ebbebf0"
-  integrity sha512-u8DpDnMbPcqBmJOB4PeEtn6q7vKmLVTLFMpzoxSAo0hjYdl4iYSHRleqwPQo0ywc7UV0S6RKIahYRQ3BnZdMVw==
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/@vitest/eslint-plugin/-/eslint-plugin-1.5.1.tgz#90cab189bcaf37b86000694d5803fe65774905e4"
+  integrity sha512-t49CNERe/YadnLn90NTTKJLKzs99xBkXElcoUTLodG6j1G0Q7jy3mXqqiHd3N5aryG2KkgOg4UAoGwgwSrZqKQ==
+  dependencies:
+    "@typescript-eslint/scope-manager" "^8.46.1"
+    "@typescript-eslint/utils" "^8.46.1"
 
 "@vue/compiler-core@3.5.22":
   version "3.5.22"
