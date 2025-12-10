@@ -35,7 +35,7 @@
     "@krakentech/eslint-config": "1.2.1",
     "@pandacss/dev": "^1.0.0",
     "@types/mailchimp__mailchimp_marketing": "^3.0.21",
-    "@types/node": "24.10.1",
+    "@types/node": "24.10.2",
     "@types/react": "19.2.7",
     "@types/rss": "^0.0.32",
     "@typescript-eslint/parser": "^8.0.0",
