@@ -26,7 +26,7 @@ const EmailForm = () => {
     setEmailAddress(e.target.value);
   };
 
-  const handleSubmit = async (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleSubmit = async (e: React.SubmitEvent<HTMLElement>) => {
     e.preventDefault();
     setStatus(Statuses.PENDING);
 
