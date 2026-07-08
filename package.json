@@ -29,7 +29,7 @@
     "react": "19.2.7",
     "react-dom": "19.2.7",
     "rss": "^1.2.2",
-    "typescript": "^5.0.4"
+    "typescript": "^7.0.0"
   },
   "devDependencies": {
     "@krakentech/eslint-config": "1.2.1",
