@@ -10,9 +10,7 @@
       "automergeStrategy": "merge-commit"
     },
     {
-      "matchPackageNames": [
-        "@types/node"
-      ],
+      "matchPackageNames": ["@types/node"],
       "matchUpdateTypes": ["minor"],
       "automerge": true,
       "automergeStrategy": "merge-commit"
