@@ -9,8 +9,8 @@ jobs:
     strategy:
       matrix:
         include:
-          - name: Lint with ESLint
-            command: eslint
+          - name: Lint with oxlint
+            command: lint
           - name: Format with Prettier
             command: format
           - name: Check types

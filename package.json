@@ -11,8 +11,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "eslint": "eslint .",
-    "eslint:fix": "eslint . --fix",
+    "lint": "oxlint .",
+    "lint:fix": "oxlint . --fix",
     "type-check": "tsc",
     "format": "prettier --check '**/*.{css,json,js,jsx,md,mdx,ts,tsx}'",
     "format:fix": "prettier --write '**/*.{css,json,js,jsx,md,mdx,ts,tsx}'",
@@ -34,15 +34,14 @@
     "typescript": "^5.0.4"
   },
   "devDependencies": {
-    "@krakentech/eslint-config": "1.2.1",
     "@pandacss/dev": "^2.5.0",
     "@types/mailchimp__mailchimp_marketing": "^3.0.21",
     "@types/node": "26.6.6",
     "@types/react": "19.3.0",
     "@types/rss": "^0.0.32",
-    "@typescript-eslint/parser": "^8.0.0",
-    "eslint": "9",
-    "eslint-config-next": "^16.0.0",
+    "eslint-plugin-simple-import-sort": "^14.0.0",
+    "oxlint": "^1.93.0",
+    "oxlint-tsgolint": "^7.0.2007",
     "prettier": "3.10.1"
   }
 }
