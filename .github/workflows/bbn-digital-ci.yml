@@ -3,24 +3,29 @@ name: bbn.digital
 on: push
 
 jobs:
-  linter:
-    name: Lint with ESLint
+  check:
+    name: ${{ matrix.name }}
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include:
+          - name: Lint with ESLint
+            command: eslint
+          - name: Format with Prettier
+            command: format
+          - name: Check types
+            command: type-check
     steps:
       - uses: actions/checkout@v7
+      
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 12.18.0
+          
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 26
+          cache: 'pnpm'
+          
       - run: pnpm i
-      - run: pnpm eslint
-  format:
-    name: Format with Prettier
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v7
-      - run: pnpm i
-      - run: pnpm format
-  type-check:
-    name: Check types
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v7
-      - run: pnpm i
-      - run: pnpm type-check
+      - run: pnpm ${{ matrix.command }}
