@@ -14,8 +14,8 @@
     "lint": "oxlint .",
     "lint:fix": "oxlint . --fix",
     "type-check": "tsc",
-    "format": "prettier --check '**/*.{css,json,js,jsx,md,mdx,ts,tsx}'",
-    "format:fix": "prettier --write '**/*.{css,json,js,jsx,md,mdx,ts,tsx}'",
+    "format": "oxfmt --check",
+    "format:fix": "oxfmt",
     "prepare": "panda codegen --clean"
   },
   "dependencies": {
@@ -40,8 +40,8 @@
     "@types/react": "19.3.0",
     "@types/rss": "^0.0.32",
     "eslint-plugin-simple-import-sort": "^14.0.0",
+    "oxfmt": "^0.78.0",
     "oxlint": "^1.93.0",
-    "oxlint-tsgolint": "^7.0.2007",
-    "prettier": "3.10.1"
+    "oxlint-tsgolint": "^7.0.2007"
   }
 }

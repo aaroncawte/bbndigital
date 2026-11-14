@@ -18,9 +18,7 @@
   ],
   "overrides": [
     {
-      "files": [
-        "**/*.{js,jsx,cjs,mjs}"
-      ],
+      "files": ["**/*.{js,jsx,cjs,mjs}"],
       "rules": {
         "react/display-name": "error",
         "react/jsx-key": "error",
@@ -108,18 +106,9 @@
         "jsx-a11y/no-noninteractive-element-interactions": [
           "error",
           {
-            "body": [
-              "onError",
-              "onLoad"
-            ],
-            "iframe": [
-              "onError",
-              "onLoad"
-            ],
-            "img": [
-              "onError",
-              "onLoad"
-            ]
+            "body": ["onError", "onLoad"],
+            "iframe": ["onError", "onLoad"],
+            "img": ["onError", "onLoad"]
           }
         ],
         "jsx-a11y/no-noninteractive-element-to-interactive-role": "error",
@@ -1302,18 +1291,13 @@
         "XRWebGLLayer": "readonly",
         "XSLTProcessor": "readonly"
       },
-      "plugins": [
-        "react",
-        "jsx-a11y"
-      ],
+      "plugins": ["react", "jsx-a11y"],
       "env": {
         "serviceworker": true
       }
     },
     {
-      "files": [
-        "**/*.{ts,tsx,mts,cts}"
-      ],
+      "files": ["**/*.{ts,tsx,mts,cts}"],
       "rules": {
         "constructor-super": "off",
         "for-direction": "error",
@@ -1387,9 +1371,7 @@
         "no-console": [
           "error",
           {
-            "allow": [
-              "warn, error"
-            ]
+            "allow": ["warn, error"]
           }
         ],
         "no-var": "error",
@@ -1478,10 +1460,7 @@
           }
         ],
         "typescript/restrict-template-expressions": "off",
-        "typescript/return-await": [
-          "error",
-          "error-handling-correctness-only"
-        ],
+        "typescript/return-await": ["error", "error-handling-correctness-only"],
         "typescript/triple-slash-reference": "error",
         "typescript/unbound-method": "off",
         "typescript/unified-signatures": "error",
@@ -1498,10 +1477,7 @@
         "import/first": "error",
         "import/newline-after-import": "error",
         "import/no-duplicates": "error",
-        "import/consistent-type-specifier-style": [
-          "error",
-          "prefer-inline"
-        ]
+        "import/consistent-type-specifier-style": ["error", "prefer-inline"]
       },
       "globals": {
         "AsyncDisposableStack": "readonly",
@@ -2608,13 +2584,8 @@
         "node": true,
         "es2018": true
       },
-      "plugins": [
-        "typescript",
-        "import"
-      ],
-      "jsPlugins": [
-        "eslint-plugin-simple-import-sort"
-      ]
+      "plugins": ["typescript", "import"],
+      "jsPlugins": ["eslint-plugin-simple-import-sort"]
     }
   ]
 }
