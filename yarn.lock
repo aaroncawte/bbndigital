@@ -1807,15 +1807,10 @@ balanced-match@^4.0.2:
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-4.0.4.tgz#bfb10662feed8196a2c62e7c68e17720c274179a"
   integrity sha512-BLrgEcRTwX2o6gGxGOCNyMvGSp35YofuYzw9h1IMTRmKqttAZZVU67bdb9Pr2vUHA8+j3i2tJfjO6C6+4myGTA==
 
-baseline-browser-mapping@^2.11.29, baseline-browser-mapping@^2.11.33:
-  version "2.11.35"
-  resolved "https://registry.yarnpkg.com/baseline-browser-mapping/-/baseline-browser-mapping-2.11.35.tgz#3ca6f40d1c594ab494d8a21b05d5316528a41563"
-  integrity sha512-GNk8KX52CHqeNKGk8+7tZnQab/2k1t/BgrUHPKNdijzpEhF1saPQZHVKb6m5loSAxB39gyrTYw34Qf9CQ3u1qQ==
-
-baseline-browser-mapping@^2.9.19:
-  version "2.10.8"
-  resolved "https://registry.yarnpkg.com/baseline-browser-mapping/-/baseline-browser-mapping-2.10.8.tgz#23d1cea1a85b181c2b8660b6cfe626dc2fb15630"
-  integrity sha512-PCLz/LXGBsNTErbtB6i5u4eLpHeMfi93aUv5duMmj6caNu6IphS4q6UevDnL36sZQv9lrP11dbPKGMaXPwMKfQ==
+baseline-browser-mapping@^2.11.29, baseline-browser-mapping@^2.11.33, baseline-browser-mapping@^2.9.19:
+  version "2.11.37"
+  resolved "https://registry.yarnpkg.com/baseline-browser-mapping/-/baseline-browser-mapping-2.11.37.tgz#a6170da13a37d1423bec6e99bcd7889a9db77036"
+  integrity sha512-QYph+vfurmaxhNwi9FprfmtkT5cx2Keg8FzZ0vnjO8ukscIybVyZGMFwdllKGlTI6qyU8ck43OM9UXh+IFJihQ==
 
 brace-expansion@^1.1.7:
   version "1.1.21"
