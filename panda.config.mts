@@ -6,6 +6,9 @@ export default defineConfig({
   // Whether to use css reset
   preflight: false,
 
+  // presets
+  presets: ["@pandacss/preset-base"],
+
   // Where to look for your css declarations
   include: [
     "./components/**/*.{js,jsx,ts,tsx}",

@@ -10,11 +10,7 @@
       "automergeStrategy": "merge-commit"
     },
     {
-      "matchPackageNames": [
-        "@typescript-eslint/parser",
-        "eslint",
-        "@types/node"
-      ],
+      "matchPackageNames": ["@types/node"],
       "matchUpdateTypes": ["minor"],
       "automerge": true,
       "automergeStrategy": "merge-commit"
