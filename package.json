@@ -36,7 +36,7 @@
   "devDependencies": {
     "@pandacss/dev": "^2.5.0",
     "@types/mailchimp__mailchimp_marketing": "^3.0.21",
-    "@types/node": "26.6.6",
+    "@types/node": "26.6.11",
     "@types/react": "19.3.0",
     "@types/rss": "^0.0.32",
     "eslint-plugin-simple-import-sort": "^14.0.0",
